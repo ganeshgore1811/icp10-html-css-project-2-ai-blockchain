@@ -101,3 +101,51 @@ button:hover {
    border: none;
    border-radius: 5px;
 }
+
+
+.section-page-description-heading{
+    font-weight: 500;
+    margin-top: 90px;
+    text-align: center;
+    color: rgb(151, 146, 146);
+}
+
+.section-page-heading{
+    color: white;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+.section-page-description{
+    text-align: center;
+    color: rgb(151, 146, 146);
+    font-size: 13px; 
+}
+
+.section-page-card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-card {
+    height: 400px;
+    width: auto;
+    margin: 20px;
+    border: 0.8px solid #4B0082;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.section-card img{
+    border: 0.8px solid #4B0082;
+    height: 250px;
+    width: 450px; 
+    border-radius: 10px;
+    object-fit: cover;
+    
+}
+
+
+
