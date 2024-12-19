@@ -32,4 +32,23 @@ header{
     padding: 0.5rem 1rem;
     text-decoration: none;
     border-radius: 5px;
+    margin-bottom: 5px;
+}
+section{
+    padding: 2rem;
+    color:white;
+}
+
+.features{
+    display: flex;
+    gap: 2rem;
+    justify-content: center ;
+}
+.card{
+    background-color:#240739de;
+    padding: 1.5rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 300px;
+    text-align: center;
 }
