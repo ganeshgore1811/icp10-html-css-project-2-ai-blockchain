@@ -277,4 +277,57 @@ li, a, button {
 }
 
 
+.section-edge-area{
+    padding: 40px 0 0 0;
+    margin-bottom: 120px;  
+   
+}
+
+.section-edge-area-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.section-edge-data{
+    border-bottom: 1px solid white;
+    padding: 10px;
+}
+
+.section-edge-data img{
+    border-radius: 50px;
+    padding: 12px;
+    height: 25px;
+    display: block;
+    margin: auto;
+    border: 5px solid #1B1B1B;
+    background-color: antiquewhite;
+}
+
+.section-edge-heading{
+    font-size: 14px;
+    color: white;
+    margin: 10px 10px;
+    font-weight: 600;
+    text-align: center
+}
+
+.section-edge-description{
+    font-size: 12px;
+    color: rgb(151, 146, 146);
+    font-weight: 500;
+    text-align: center;
+    margin: 0 25px
+}
+
+.section-edge-button{
+    padding: 10px 20px;
+    background-color: black;
+    border: none;
+    border-radius: 5px;
+    display: block;
+    margin: auto;
+}
+
 
