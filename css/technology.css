@@ -67,7 +67,7 @@ li, a, button {
     text-decoration: none;
 }
 
-.home-page-heading{
+.main-page-heading{
     color: white;
     margin-top: 90px;
     text-align: center;
@@ -75,7 +75,7 @@ li, a, button {
     font-weight: 500;   
 }
 
-.home-page-heading-description{
+.main-page-heading-description{
     text-align: center;
     color: white;
     font-size: 1.5rem;
@@ -91,4 +91,14 @@ li, a, button {
 .sub-description{
     color: #fff;
     
+}
+
+.key-feature-container{
+    display: flex;
+}
+
+.key-feature-sub-contaainer{
+    height: 600;
+    width: 600;
+    background-color: aquamarine;
 }
