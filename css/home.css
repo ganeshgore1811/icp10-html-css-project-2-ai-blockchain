@@ -1,23 +1,41 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-
 body{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    background-color: #160823;
     font-family: 'poppins', sans-serif;
-    padding: 20px 90px;
-    background-image: linear-gradient(360deg, #4B0082, #000000);
+    background-size: 300% 300%;
+    padding: 30px 0 0 0;
+    background-image: linear-gradient(45deg, #161144, #210D26, #24243E);
+    animation: bg 12s ease infinite;
+} 
+
+@keyframes bg{
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 0% 100%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
 }
 
 .container{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 1000px;
     padding: 15px 10%;
+    margin: 0 80px;
     height: 30px;
-    background-color: #1B1B1B;
+    background-color: #210D26;
+    border: 1px solid white;
     border-radius: 20px;
+    margin-bottom: 120px;
 }
 
 li, a, button {
@@ -29,6 +47,7 @@ li, a, button {
 
 .logo{
     color: #fff;
+    height: 100px;
 }
 
 .logo {
@@ -50,9 +69,9 @@ li, a, button {
 }
 
 .nav-links li a:hover {
-    color: #0088a9;
+    color: #8E2DE2;
 }
-button {
+.home-page-button-cta {
     flex-wrap: wrap;
     padding: 7px 18px;
     background-color: rgb(13, 155, 191);
@@ -62,20 +81,39 @@ button {
     transition: all 0.3s ease 0s;
 }
 
-button:hover {
-    background-color: rgba(0,136,169,0.8);
+.home-page-button-cta:hover {
+    background-color: #8E2DE2;
 }
 
 
 .home-page-heading{
     color: white;
-    margin-top: 90px;
     text-align: center;
     font-size: 2.5rem;
     font-weight: 500;   
 }
 
+.page-heading {
+    color: white;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 500; 
+}
+
+.page-heading-right{
+    color: white;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
 .home-page-description{
+    text-align: center;
+    color: rgb(151, 146, 146);
+    font-size: 13px;
+    
+}
+
+.page-description{
     text-align: center;
     color: rgb(151, 146, 146);
     font-size: 13px;
@@ -87,7 +125,7 @@ button:hover {
     justify-content: center;
     margin: 20px;
 }
-.home-page-button .home-page-button-1{
+.home-page-button-1{
     margin: 20px;
     padding: 10px 20px;
     background-color: purple;
@@ -95,19 +133,35 @@ button:hover {
     border: none;
 }
 
-.home-page-button .home-page-button-2{
+.home-page-button-2{
    padding: 10px 20px;
    background-color: black;
    border: none;
    border-radius: 5px;
 }
 
+.home-page-container{
+    margin-bottom: 120px;
+}
+
+.section-page-container{
+    margin-bottom: 120px;
+}
 
 .section-page-description-heading{
     font-weight: 500;
-    margin-top: 90px;
     text-align: center;
     color: rgb(151, 146, 146);
+}
+.page-description-heading{
+    text-align: center;
+    color: rgb(151, 146, 146);
+    font-weight: 500;
+}
+
+.page-description-heading-right{
+    color: rgb(151, 146, 146);
+    font-weight: 500;
 }
 
 .section-page-heading{
@@ -127,10 +181,11 @@ button:hover {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 0 50px;
 }
 
 .section-card {
-    height: 400px;
+    height: 450px;
     width: auto;
     margin: 20px;
     border: 0.8px solid #4B0082;
@@ -140,11 +195,85 @@ button:hover {
 
 .section-card img{
     border: 0.8px solid #4B0082;
-    height: 250px;
-    width: 450px; 
+    height: 300px;
+    width: 500px; 
     border-radius: 10px;
+    object-fit: cover;   
+}
+
+
+.section-card-heading{
+    color: white;
+    font-size: 17px;
+    margin: 5px 10px;
+}
+
+.section-card-description{
+    color: white;
+    font-size: 11px;
+    margin: 5px 10px;
+}
+
+.section-card-button{
+    padding: 5px 15px;
+    background-color: #1B1B1B;
+    border-radius: 40px;
+    margin: 15px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 9px;
+    border: 1px solid #4B0082;
+} 
+
+
+
+.section-advantages-container{
+    margin-bottom: 120px;
+}
+
+.section-advantage-cards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-advantages-card-area{
+    padding: 20px;
+    display: flex;
+    height: 400px;
+    margin: 0 50px;
+}
+
+.section-advantages-boxes{
+    padding: 10px;
+    border: 1px solid #4B0082;
+    margin: 20px;
+    border-radius: 20px;
+}
+
+.section-advantages-boxes img{
+    border: 1px solid #4B0082;
+    height: 200px;
+    width: 300px;
     object-fit: cover;
-    
+    border-radius: 20px;
+}
+
+.section-advantage-heading {
+    font-size: 16px;
+    color: white;
+    margin: 5px 10px;
+    font-weight: 500;
+    text-align: center
+}
+
+.section-advantage-description {
+    font-size: 13px;
+    color: rgb(151, 146, 146);
+    margin: 15px 10px;
+    font-weight: 500;
+    text-align: center
 }
 
 
