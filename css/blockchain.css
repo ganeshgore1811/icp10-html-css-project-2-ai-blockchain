@@ -39,7 +39,7 @@ section{
     color:white;
 }
 
-.features{
+.features, .industries{
     display: flex;
     gap: 2rem;
     justify-content: center ;
