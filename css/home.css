@@ -330,6 +330,61 @@ li, a, button {
     margin: auto;
 }
 
+.section-pricing-container{
+    margin-bottom: 120px;
+}
+
+.pricing-cards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.pricing-cards div{
+    border-radius: 20px;
+    height: 450px;
+    width: 270px;
+    border: 1px solid white;
+}
+
+.pricing-cards-info{
+    padding: 10px 25px;
+    color: white;
+    border: 2px solid white;
+    margin: 0;
+    border: 2px solid white;
+}
+
+.pricing-cards-info span{
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0 3px 0 0;
+}
+
+.pricing-cards-info p{
+    font-size: 10px;
+    font-weight: 300;
+}
+
+.pricing-cards-button{
+    color: black;
+    padding: 10px 20px;
+    border-radius: 30px;
+    margin-top: 20px;
+    border: none;
+}
+
+
+
+
+
+
+
+
+
+
+
 .footer-container{
     padding: 50px;
 }
