@@ -164,17 +164,41 @@ li, a, button {
     margin-top: 15px;
 }
 
-.works-heading{
+.working-container{
     display: flex;
     flex-wrap: wrap;
+    margin-left: 65px;
 }
 
-.working-card{
+.working-card-left{
     height: 200px;
     width: 600px;
-    background-color: #0088a9;
-    margin: 10px;
+    background: linear-gradient(to right, rgb(98, 52, 158),#680c77);
     border-radius: 15px;
-    
+    margin: 20px 20px;      
 }
-/* background-color: rgba(0,136,169,0.8);
+
+.working-card-right{
+    height: 200px;
+    width: 600px;
+    background: linear-gradient(to right, rgb(98, 52, 158),#680c77);
+    border-radius: 15px;
+    margin: 20px 20px;  
+}
+
+
+.step-heading{
+    text-align: center;
+    font-size: 24px;
+    padding-top: 15px;
+    color: #fff;
+}
+
+.step-paragrapgh{
+    text-align: center;
+    font-size: 18px;
+    padding-left: 30px;
+    padding-right: 30px;
+    color: #fff;
+}
+
