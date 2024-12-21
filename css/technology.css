@@ -101,41 +101,56 @@ li, a, button {
 }
 
 .feature-card{ 
-    height: 480px;
+   
     width: 1200px;
     margin: 20px auto;
     display: flex;
     flex-direction: row;
+    
 }
 .feature-card:hover{
-    height: 520px ;
-    width: 1220px;
-    transition: 0.5s;
+    
+    width: 1250px;
+    transition: 0.3s;
 }
 
 
 .feature-image{
-    height: 380px;
-    width: 380px;
+    height: 350px;
+    width: 350px;
     border-radius: 15px;
     justify-content: center;
     margin: 50px 0;
     margin-left: 50px;
+    margin-right: 50px;
 }
 
 
-.feature-description{
+.feature-description-odd{
+    margin-left: 50px;
+    margin-top: 50px;
+    font-size: 32px;
+    color: #fff;
+}
+.feature-description-even{
     margin-left: 50px;
     margin-top: 50px;
     font-size: 32px;
     color: #fff;
 }
 
-.feature-description-para{
+.feature-description-para-odd{
+    font-size: 19px;
     margin-left: 50px;
-    font-size: 20px;
-    text-align: justify;
-    margin-right: 40px;
+    text-align:justify;
+    margin-right: 50px;
+    color: #fff;
+}
+.feature-description-para-even{
+    margin-left: 50px;
+    font-size: 19px;
+    text-align:justify;
+    margin-right: 50px;
     color: #fff;
 }
 
@@ -145,3 +160,4 @@ li, a, button {
     margin-left: 50px;
     margin-top: 15px;
 }
+
