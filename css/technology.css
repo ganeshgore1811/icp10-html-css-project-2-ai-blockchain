@@ -97,16 +97,22 @@ li, a, button {
     
     
     
+    
 }
 
-.feature-card{
-    
+.feature-card{ 
     height: 480px;
-    width: 90%;
+    width: 1200px;
     margin: 20px auto;
     display: flex;
     flex-direction: row;
 }
+.feature-card:hover{
+    height: 520px ;
+    width: 1220px;
+    transition: 0.5s;
+}
+
 
 .feature-image{
     height: 380px;
@@ -116,6 +122,7 @@ li, a, button {
     margin: 50px 0;
     margin-left: 50px;
 }
+
 
 .feature-description{
     margin-left: 50px;
