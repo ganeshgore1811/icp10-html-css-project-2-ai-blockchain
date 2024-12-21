@@ -85,6 +85,22 @@ li, a, button {
     background-color: #8E2DE2;
 }
 
+.line-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+}
+
+.line{
+    height: 5px;
+    width: 500px;
+    color: #3c1261;
+    box-shadow: 10px 0 200px 20px #8e2de2;
+    animation: line 2s ease infinite;
+    background-image: linear-gradient(45deg, #21139c, #9641ac, #6060e5);
+}
+
 
 .home-page-heading{
     color: white;
@@ -100,23 +116,15 @@ li, a, button {
     font-weight: 500; 
 }
 
-.page-heading-right{
-    color: white;
-    font-size: 2rem;
-    font-weight: 500;
-}
-
 .home-page-description{
     text-align: center;
     color: rgb(151, 146, 146);
-    font-size: 13px;
-    
 }
 
 .page-description{
     text-align: center;
     color: rgb(151, 146, 146);
-    font-size: 13px;
+    font-size: 14px;
 }
 
 .home-page-button{
@@ -128,9 +136,12 @@ li, a, button {
 .home-page-button-1{
     margin: 20px;
     padding: 10px 20px;
-    background-color: purple;
+    background-color: white;
+    color: #000000;
     border-radius: 5px;
     border: none;
+    font-weight: 500;
+    transition: 0.5s;
 }
 
 .home-page-button-2{
@@ -138,14 +149,70 @@ li, a, button {
    background-color: black;
    border: none;
    border-radius: 5px;
+   transition: 0.5s;
 }
 
+.home-page-button-1:hover{
+    color: #8e2de2;
+}
+
+.home-page-button-2:hover{
+    color: #8e2de2;
+}
+
+.section-main-container{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin-bottom: 100px;
+  
+}
+
+.section-main-info{
+    height: 60px;
+    width: 100%;
+    margin: 0 60px;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+.section-main-info div{
+    color: white;
+    margin: 0 50px;
+}
+.section-main-info h3{
+    text-align: center;
+    margin: 0;
+}
+
+.section-main-info p{
+    margin: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .home-page-container{
-    margin-bottom: 120px;
+    margin-bottom: 100px;
 }
 
 .section-page-container{
-    margin-bottom: 120px;
+    margin-bottom: 40px;
 }
 
 .section-page-description-heading{
@@ -162,19 +229,6 @@ li, a, button {
 .page-description-heading-right{
     color: rgb(151, 146, 146);
     font-weight: 500;
-}
-
-.section-page-heading{
-    color: white;
-    text-align: center;
-    font-size: 2.5rem;
-    font-weight: 500;
-}
-
-.section-page-description{
-    text-align: center;
-    color: rgb(151, 146, 146);
-    font-size: 13px; 
 }
 
 
@@ -261,13 +315,6 @@ li, a, button {
     border-bottom: 3px solid #8e2de2;
 }
 
-
-
-
-
-
-
-
 .section-page-card{
     display: flex;
     align-items: center;
@@ -317,10 +364,8 @@ li, a, button {
     border: 1px solid #4B0082;
 } 
 
-
-
 .section-advantages-container{
-    margin-bottom: 120px;
+    margin-bottom: 70px;
 }
 
 .section-advantage-cards{
@@ -358,20 +403,16 @@ li, a, button {
     font-weight: 500;
     text-align: center
 }
-
-.section-advantage-description {
-    font-size: 13px;
-    color: rgb(151, 146, 146);
-    margin: 15px 10px;
-    font-weight: 500;
-    text-align: center
+.section-advantage-description{
+    text-align: center;
+    font-size: 11px;
+    margin: 20px;
+    color: white;
 }
-
 
 .section-edge-area{
     padding: 40px 0 0 0;
     margin-bottom: 120px;  
-   
 }
 
 .section-edge-area-container{
@@ -427,7 +468,7 @@ li, a, button {
 }
 
 .section-pricing-container{
-    margin-bottom: 120px;
+    margin-bottom: 100px;
 }
 
 .pricing-cards{
