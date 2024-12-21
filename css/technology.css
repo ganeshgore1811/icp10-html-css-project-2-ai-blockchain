@@ -54,10 +54,12 @@ button {
     border-radius: 50px;
     cursor: pointer;
     transition: all 0.3s ease 0s;
+    
 }
 
 button:hover {
     background-color: rgba(0,136,169,0.8);
+    
 }
 
 li, a, button {
@@ -106,12 +108,13 @@ li, a, button {
     margin: 20px auto;
     display: flex;
     flex-direction: row;
+    background: linear-gradient(to right, rgb(64, 41, 94),#06303e);
+    border-radius: 15px;
+    transition: transform 0.3s ease-in-out;
     
 }
 .feature-card:hover{
-    
-    width: 1250px;
-    transition: 0.3s;
+    transform: scale(1.05);
 }
 
 
@@ -161,3 +164,17 @@ li, a, button {
     margin-top: 15px;
 }
 
+.works-heading{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.working-card{
+    height: 200px;
+    width: 600px;
+    background-color: #0088a9;
+    margin: 10px;
+    border-radius: 15px;
+    
+}
+/* background-color: rgba(0,136,169,0.8);
