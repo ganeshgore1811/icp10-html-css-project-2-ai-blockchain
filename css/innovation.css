@@ -34,13 +34,32 @@ nav ul li {
    padding: 20px;
    border-radius: 50px;
 }
-.benefit{
-font-family: "Jaro", sans-serif;
-font-weight: normal;
+.body-container{
+    height: 400px;
+    width: 1150px;
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+   
 }
-
+   
 .box{
+    background-color: bisque;
+    width:350px;
+    padding: 15px;
+    margin: 10px;
+    border: 1px solid black;
+    box-shadow: 5px 5px 5px 5px rgb(60, 53, 53);
+    border-radius: 30px;
+ 
+}
+.box:hover{
+    background-color: rgb(218, 245, 206);
+    transition: 4s cubic-bezier();
+
+}
+.font{
     font-family: 'poppins', sans-serif;
 }
-
 
