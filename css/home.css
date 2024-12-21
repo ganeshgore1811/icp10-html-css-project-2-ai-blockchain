@@ -35,7 +35,7 @@ body{
     background-color: #210D26;
     border: 1px solid white;
     border-radius: 20px;
-    margin-bottom: 120px;
+    margin-bottom: 100px;
 }
 
 li, a, button {
@@ -176,6 +176,97 @@ li, a, button {
     color: rgb(151, 146, 146);
     font-size: 13px; 
 }
+
+
+.section-partner-container{
+    padding: 30px;
+    flex-wrap: wrap;
+}
+
+
+.section-our-partner .section-company-logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+   
+}
+
+.section-company-logo img {
+    height: 20px;
+    object-fit: cover;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+.section-company-logo span{
+    color: white;
+    font-size: 10px;
+}
+.section-company-logo p{
+    font-size: 8px;
+    margin-top: 2px;
+    color: gray;
+}
+
+.section-our-partners-info{
+    text-align: center;
+    color: white;
+    margin-bottom: 50px;
+}
+
+
+.section-company-logo div{
+    border-radius: 13px;
+    margin: 20px;
+    height: 60px;
+    width: 70px;
+    padding: 25px 20px;
+    transition: 0.5s;
+    border: 1px solid #8e2de2;
+}
+.section-company-logo div:hover{
+    box-shadow: 0px 0px 10px#8E2DE2;
+}
+
+.section-our-partner-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px;
+}
+.section-our-partner-buttons-1 {
+    padding: 10px 25px;
+    margin: 15px;
+    border: none;
+    border-radius: 10px;
+    color: black;
+    transition: 0.5s;
+}
+
+.section-our-partner-buttons-2{
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    background: transparent;
+    transition: ease 0.5s;
+    border-bottom: 3px solid transparent;
+}
+
+.section-our-partner-buttons-1:hover{
+    background-color: #8e2de2;
+}
+.section-our-partner-buttons-2:hover{
+    color: #8e2de2;
+    border-bottom: 3px solid #8e2de2;
+}
+
+
+
+
+
+
+
 
 .section-page-card{
     display: flex;
@@ -328,6 +419,11 @@ li, a, button {
     border-radius: 5px;
     display: block;
     margin: auto;
+    transition: 0.5s;
+}
+
+.section-edge-button:hover{
+    color: #8e2de2;
 }
 
 .section-pricing-container{
