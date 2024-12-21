@@ -52,3 +52,14 @@ section{
     width: 300px;
     text-align: center;
 }
+.testimonial {
+    background: #240739de;
+    padding: 1.5rem;
+    margin: 2rem auto;
+    border-radius: 8px;
+    max-width: 600px;
+    text-align: center;
+}
+.list{
+    padding-left: 400px;
+}
