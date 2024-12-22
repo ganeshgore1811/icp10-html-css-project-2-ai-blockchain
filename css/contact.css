@@ -101,3 +101,9 @@ button:hover {
    border-radius: 5px;
 }
 
+.title{
+    color: hsl(0, 0%, 92%);
+    display: flex;
+    justify-content: center;
+}
+
