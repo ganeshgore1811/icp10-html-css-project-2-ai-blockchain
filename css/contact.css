@@ -145,3 +145,16 @@ button:hover {
     
 }
 
+.thiredblock{
+    grid-row: 2;
+    grid-column: 5/6;
+    
+    width: 450px;
+    height: 320px;
+    background-color: #FFE3A2;
+    padding: 1px 20px;
+    border: none;
+    border-radius: 10px;
+    font-size: 24px;
+    margin: 0px 10px ;
+}
