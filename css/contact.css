@@ -117,3 +117,17 @@ button:hover {
     gap: 10px;
 }
 
+.firstblock{
+    grid-row: span 2;
+    grid-column: span 2;
+    background-color: #A6FCD3;
+    height: auto ;
+    width: 750px;
+    padding: 1px 20px;
+    border: none;
+    border-radius: 10px;
+    font-size: 24px;
+    margin: 10px;
+    padding-bottom: 17px;
+}
+
