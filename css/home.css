@@ -29,7 +29,7 @@ body{
     align-items: center;
     height: 1000px;
     padding: 15px 10%;
-    margin: 25px 10px;
+    margin: 20px;
     height: 30px;
     background-color: #26072d;
     border: 1px solid #8e2de2;
@@ -180,7 +180,7 @@ body{
 
 .section-main-info{
     height: 60px;
-    width: 100%;
+    max-width: 100%;
     margin: 0 60px;
     border-radius: 10px;
     padding: 20px;
@@ -310,26 +310,26 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
     margin: 0 60px;
+    flex-wrap: wrap;
 }
 
 .section-card {
-    min-height: 450px;
-    max-width: auto;
+    max-height: 350px;
+    max-width: 400px;
     margin: 20px;
     border: 0.8px solid #4B0082;
     border-radius: 20px;
     padding: 10px;
+   
 }
 
 
 .section-card img{
-    border: 0.8px solid #4B0082;
-    height: 300px;
-    width: 500px; 
+    max-width: 400px; 
     border-radius: 10px;
-    object-fit: cover;   
+    object-fit: cover;  
+    border-radius: 20px; 
 }
 
 
@@ -542,8 +542,8 @@ body{
 .pricing-cards div{
     border-radius: 20px;
     height: 450px;
-    width: 270px;
-    margin: 20px;
+    width: 200px;
+    margin: 10px;
     transition: 0.5s;
     border: 1px solid #8E2DE2;
 }
@@ -576,7 +576,7 @@ body{
 }
 
 .pricing-cards-info li{
-    font-size: 10px;
+    font-size: 9px;
     font-weight: 300;
 }
 
@@ -722,12 +722,16 @@ padding-top: 10px;
 
 
 @media only screen and (min-width: 769px) {
+body{
+    margin: 50px;
+}
 .menu-icon{
     display: none;
 }
 .section-main-info {
     padding: 15px;
 }
+
 }
 
 @media only screen and (min-width: 601px) and (max-width: 768px) {
@@ -753,18 +757,84 @@ padding-top: 10px;
     font-size: 13px;
 }
 
-.footer-container {
-    padding: 20px;
+
+.section-main-info div{
+    color: white;
+    margin: 50px;
 }
 
-.footer-section {
+.section-page-card{
     margin: 10px;
+}
+
+.section-card img{
+    height: 100%;
+    width: 100%; 
+}
+
+.section-advantages-container{
+    margin: 10px;
+}
+
+.section-advantages-card-area{
+    margin: 10px;
+}
+
+.section-crypto-div div{
+    min-height: 100px;
+    max-width: 100px;
+}
+
+.section-crypto-div div img{
+    display: block;
+    margin: auto;
+    max-height: 23px;
+    min-width: none;
+}
+
+.section-crypto-div div p{
+    text-align: center;
+    font-size: 6px;
+    color: white;
+    padding-bottom: 10px;
+}
+
+.section-crypto-div div span p{
+    font-size: 12px;    
+
+}
+
+.section-crypto-container{
+    margin: auto;
+    padding: auto;
+    flex-wrap: wrap;
+}
+
+.section-pricing-container{
+    margin: 25px;
+}
+.page-description {
+    font-size: 10px;
+}
+
+.pricing-cards div {
+    width: 90%;
+    margin: 10px 50px;
+}
+
+.footer-container {
+    padding: 10px;
+    margin: 50px;
+}
+
+.footer-input-email{
+    padding: 12px 10px;
 }
 }
 
 @media only screen and (max-width: 600px){
 body{
-    margin: auto
+    margin: 10px
 }
 .logo-1{
     display: none;
@@ -787,27 +857,25 @@ body{
     font-size: 17px;
 }
 
-.section-card{
-    max-height: 200px;
-    width: 100%; 
+.section-main-info div{
+    color: white;
+    margin: 10px;
+}
+.section-page-card{
+    margin: 10px;
 }
 
 .section-card img{
-    border: 0.8px solid #4B0082;
     height: 100%;
     width: 100%; 
-    border-radius: 10px;
-    object-fit: cover;   
 }
 
 .section-advantages-container{
-    margin: 20px;
+    margin: 10px;
 }
 
-
 .section-advantages-card-area{
-    min-height: 300px;
-    width: 300px;
+    margin: 10px;
 }
 
 .section-crypto-div div{
@@ -852,20 +920,13 @@ body{
     margin: 10px auto;
 }
 
-.footer-container{
-    margin: auto;
+.footer-container {
+    padding: 10px;
+    margin: 10px;
 }
-
 
 .footer-input-email{
     padding: 12px 10px;
-    text-align: center;
-    color: white;
-    border: none;
-    background-color: #000000;
-    border-radius: 5px;
-    margin: 10px; 
-    transition: 0.5s;
 }
 
 }
