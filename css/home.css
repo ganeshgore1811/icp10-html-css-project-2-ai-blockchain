@@ -7,7 +7,6 @@ body{
     background-color: #160823;
     font-family: 'poppins', sans-serif;
     background-size: 300% 300%;
-    padding: 30px 0 0 0;
     background-image: linear-gradient(45deg, #161144, #210D26, #24243E);
     animation: bg 12s ease infinite;
 } 
@@ -30,37 +29,47 @@ body{
     align-items: center;
     height: 1000px;
     padding: 15px 10%;
-    margin: 0 80px;
+    margin: 25px 10px;
     height: 30px;
-    background-color: #210D26;
-    border: 1px solid white;
-    border-radius: 20px;
+    background-color: #26072d;
+    border: 1px solid #8e2de2;
+    border-radius: 15px;
     margin-bottom: 100px;
+    box-shadow: 0px 0px 50px #000;
 }
 .home-page-container{
     margin-bottom: 100px;
 }
-
-
-li, a, button {
+.container li, a, button {
     font-weight: 500;
     font-size: 14px;
     color: rgba(250, 247, 247, 0.945);
     text-decoration: none;
 }
 
-.logo{
-    color: #fff;
-    height: 100px;
-}
-
 .logo {
+    height: 70px;
     cursor: pointer;
 }
 
 .nav-links {
     list-style: none;
     display: flex;
+}
+
+.nav-login{
+    padding: 8px 40px;
+    border-radius: 30px;
+    color: #000000;
+    background-color: white;
+    border: none;
+    transition: 0.5s;
+}
+.nav-login:hover{
+    background-color: #8e2de2;
+}
+.menu-icon{
+    height: 30px;
 }
 
 .nav-links li {
@@ -73,8 +82,9 @@ li, a, button {
 }
 
 .nav-links li a:hover {
-    color: #8E2DE2;
+    color: #8e2de2;
 }
+
 .home-page-button-cta {
     flex-wrap: wrap;
     padding: 7px 18px;
@@ -83,10 +93,6 @@ li, a, button {
     border-radius: 50px;
     cursor: pointer;
     transition: all 0.3s ease 0s;
-}
-
-.home-page-button-cta:hover {
-    background-color: #8E2DE2;
 }
 
 .line-container {
@@ -170,7 +176,6 @@ li, a, button {
    align-items: center;
    justify-content: center;
    margin-bottom: 100px;
-  
 }
 
 .section-main-info{
@@ -196,23 +201,6 @@ li, a, button {
 .section-main-info p{
     margin: 0;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .section-page-container{
     margin-bottom: 40px;
@@ -322,12 +310,13 @@ li, a, button {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
     margin: 0 60px;
 }
 
 .section-card {
-    height: 450px;
-    width: auto;
+    min-height: 450px;
+    max-width: auto;
     margin: 20px;
     border: 0.8px solid #4B0082;
     border-radius: 20px;
@@ -374,38 +363,38 @@ li, a, button {
 .section-card-button:hover{
     color: #8e2de2;
 }
-.section-advantages-container{
-    margin-bottom: 70px;
+
+.section-advantages-container {
+    margin: 0 60px;
 }
 
-.section-advantage-cards{
+.section-advantage-cards {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-
-.section-advantages-card-area{
+.section-advantages-card-area {
     padding: 20px;
     display: flex;
-    height: 400px;
-    margin: 0 50px;
+    margin: 0 40px;
+    flex-wrap: wrap;
+    gap: 5px;
 }
-
-.section-advantages-boxes{
+.section-advantages-boxes {
     padding: 10px;
-    margin: 20px;
+    margin: 20px; 
     border-radius: 20px;
     transition: 0.5s;
     box-shadow: 0 0 30px #080209;
+    flex: 1 1 200px;
+    max-width: 250px;
 }
 
-.section-advantages-boxes:hover{
+.section-advantages-boxes:hover {
     box-shadow: 0 0 10px #8E2DE2;
 }
-
-.section-advantages-boxes img{
-    height: 200px;
-    width: 300px;
+.section-advantages-boxes img {
+    width: 100%;
     object-fit: cover;
     border-radius: 20px;
 }
@@ -415,9 +404,10 @@ li, a, button {
     color: white;
     margin: 5px 10px;
     font-weight: 500;
-    text-align: center
+    text-align: center;
 }
-.section-advantage-description{
+
+.section-advantage-description {
     text-align: center;
     font-size: 11px;
     margin: 20px;
@@ -425,7 +415,7 @@ li, a, button {
 }
 
 .section-crypto-container{
-    margin: 100px 60px;
+    margin: 60px 60px;
     padding: 30px;
     flex-wrap: wrap;
 }
@@ -453,7 +443,8 @@ li, a, button {
 .section-crypto-div div img{
     display: block;
     margin: auto;
-    height: 43px;
+    max-height: 43px;
+    min-width: none;
 }
 
 .section-crypto-div div p{
@@ -471,30 +462,19 @@ li, a, button {
 }
 
 .section-crypto-div div:hover{
-    box-shadow: 0 0 15px #8e2de2;
+    box-shadow: 0 0 25px#8E2DE2;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.section-edge-container{
+    margin: 100px;
+}
 .section-edge-area{
     padding: 40px 0 0 0;
     margin-bottom: 120px;  
 }
 
 .section-edge-area-container{
+    flex-wrap: wrap;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -547,6 +527,8 @@ li, a, button {
 }
 
 .section-pricing-container{
+    margin: 0 60px;
+    flex-wrap: wrap;
     margin-bottom: 100px;
 }
 
@@ -554,6 +536,7 @@ li, a, button {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .pricing-cards div{
@@ -570,7 +553,7 @@ li, a, button {
 }
 
 .pricing-cards-info{
-    padding: 10px 25px;
+    padding: 10px 30px;
     color: white;
     margin: 0;
 }
@@ -581,7 +564,18 @@ li, a, button {
     margin: 0 3px 0 0;
 }
 
-.pricing-cards-info p{
+.pricing-cards .border-line {
+    max-height: 1px;
+    width: auto;
+    margin: 0 auto;
+}
+
+.pricing-cards-info ul{
+    padding: 0 20px;
+    margin-left: 0px;
+}
+
+.pricing-cards-info li{
     font-size: 10px;
     font-weight: 300;
 }
@@ -598,15 +592,6 @@ li, a, button {
 .pricing-cards-button:hover{
     color: #8e2de2;
 }
-
-
-
-
-
-
-
-
-
 
 
 .footer-container{
@@ -638,6 +623,11 @@ li, a, button {
     background-color: #000000;
     border-radius: 5px;
     margin: 10px; 
+    transition: 0.5s;
+}
+
+.footer-input-email:hover{
+    color: #8e2de2;
 }
 
 .footer-subscribe-button{
@@ -645,13 +635,18 @@ li, a, button {
     color: #000000;
     border: none;
     border-radius: 5px;
+    transition: 0.5s;
+}
+
+.footer-subscribe-button:hover{
+    color: #8e2de2;
 }
 
 footer 
 {
 background-color:#080209;
 color: #fff;
-padding: 40px 0;
+padding: 5px 0;
 text-align: center;
 font-family: Arial, sans-serif;
 }
@@ -726,4 +721,151 @@ padding-top: 10px;
 
 
 
+@media only screen and (min-width: 769px) {
+.menu-icon{
+    display: none;
+}
+.section-main-info {
+    padding: 15px;
+}
+}
 
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+.menu-icon{
+    display: none;
+}
+.container li, a, button{
+    font-size: 10px;
+}
+.nav-login{
+    display: none;
+}
+
+.container li, a nav{
+    font-size: 12px;
+}
+
+.home-page-heading {
+    font-size: 1.8rem;
+}
+
+.page-description {
+    font-size: 13px;
+}
+
+.footer-container {
+    padding: 20px;
+}
+
+.footer-section {
+    margin: 10px;
+}
+}
+
+@media only screen and (max-width: 600px){
+body{
+    margin: auto
+}
+.logo-1{
+    display: none;
+}
+.container li, a, button {
+    display: none;
+}
+.container img{
+    height: 40px;
+}
+
+.page-heading{
+    font-size: 17px;
+}
+.page-description{
+    font-size: 7px;
+    text-wrap: wrap;
+}
+.home-page-heading {
+    font-size: 17px;
+}
+
+.section-card{
+    max-height: 200px;
+    width: 100%; 
+}
+
+.section-card img{
+    border: 0.8px solid #4B0082;
+    height: 100%;
+    width: 100%; 
+    border-radius: 10px;
+    object-fit: cover;   
+}
+
+.section-advantages-container{
+    margin: 20px;
+}
+
+
+.section-advantages-card-area{
+    min-height: 300px;
+    width: 300px;
+}
+
+.section-crypto-div div{
+    min-height: 100px;
+    max-width: 100px;
+}
+
+.section-crypto-div div img{
+    display: block;
+    margin: auto;
+    max-height: 23px;
+    min-width: none;
+}
+
+.section-crypto-div div p{
+    text-align: center;
+    font-size: 6px;
+    color: white;
+    padding-bottom: 10px;
+}
+
+.section-crypto-div div span p{
+    font-size: 12px;    
+
+}
+
+.section-crypto-container{
+    margin: auto;
+    padding: auto;
+    flex-wrap: wrap;
+}
+
+.section-pricing-container{
+    margin: 25px;
+}
+.page-description {
+    font-size: 10px;
+}
+
+.pricing-cards div {
+    width: 90%;
+    margin: 10px auto;
+}
+
+.footer-container{
+    margin: auto;
+}
+
+
+.footer-input-email{
+    padding: 12px 10px;
+    text-align: center;
+    color: white;
+    border: none;
+    background-color: #000000;
+    border-radius: 5px;
+    margin: 10px; 
+    transition: 0.5s;
+}
+
+}
