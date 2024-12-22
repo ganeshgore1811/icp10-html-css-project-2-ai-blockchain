@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    padding: 20px 90px;
+    background-image: linear-gradient(360deg, #4B0082, #000000);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f9;
+}
+
+
+header {
+    background: #4caf50;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2rem;
+}
+
+
+nav {
+    background: #333;
+    color: white;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 10px 0;
+    
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+
+main {
+    padding: 20px;
+}
+
+.resources {
+    margin-bottom: 20px;
+}
+
+.resources h2 {
+    color: green;
+    margin-bottom: 10px;
+}
+
+.resources ul {
+    list-style: disc inside;
+}
+
+.resources li {
+    margin: 10px 0;
+}
+
+.resources a {
+    color: #0073e6;
+    text-decoration: none;
+}
+
+.resources a:hover {
+    text-decoration: underline;
+}
+
+
+.about {
+    margin-top: 20px;
+    padding: 20px;
+    background: #e7f9e7;
+    border-left: 4px solid #4caf50;
+}
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 10px
