@@ -81,6 +81,7 @@ main {
 
 .resources ul {
     list-style: disc inside;
+    color: #000000;
 }
 
 .resources li {
