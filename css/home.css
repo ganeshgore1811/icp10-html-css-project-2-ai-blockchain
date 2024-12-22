@@ -117,6 +117,7 @@ li, a, button {
     text-align: center;
     font-size: 2.5rem;
     font-weight: 500; 
+    margin: 5px;
 }
 
 .home-page-description{
@@ -128,6 +129,7 @@ li, a, button {
     text-align: center;
     color: rgb(151, 146, 146);
     font-size: 14px;
+    margin-bottom: 80px;
 }
 
 .home-page-button{
@@ -391,10 +393,10 @@ li, a, button {
 
 .section-advantages-boxes{
     padding: 10px;
-    border: 1px solid #4B0082;
     margin: 20px;
     border-radius: 20px;
     transition: 0.5s;
+    box-shadow: 0 0 30px #080209;
 }
 
 .section-advantages-boxes:hover{
@@ -421,6 +423,71 @@ li, a, button {
     margin: 20px;
     color: white;
 }
+
+.section-crypto-container{
+    margin: 100px 60px;
+    padding: 30px;
+    flex-wrap: wrap;
+}
+
+.section-crypto-area .section-crypto-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+.section-crypto-div div{
+    border-radius: 8px;
+    margin: 15px;
+    height: 120px;
+    width: 190px;
+    padding: 15px 25px;
+    transition: 0.5s;
+    box-shadow: 0 0 30px #080209;
+    background-color: #080209;
+    transition: 0.5s;
+}
+
+.section-crypto-div div img{
+    display: block;
+    margin: auto;
+    height: 43px;
+}
+
+.section-crypto-div div p{
+    text-align: center;
+    font-size: 8px;
+    color: white;
+    padding-bottom: 10px;
+}
+
+.section-crypto-div div span p{
+    font-size: 10px;
+    padding: 2px;
+    color: white;
+    font-weight: 600;
+}
+
+.section-crypto-div div:hover{
+    box-shadow: 0 0 15px #8e2de2;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .section-edge-area{
     padding: 40px 0 0 0;
@@ -525,6 +592,11 @@ li, a, button {
     border-radius: 30px;
     margin-top: 20px;
     border: none;
+    transition: 0.5s;
+}
+
+.pricing-cards-button:hover{
+    color: #8e2de2;
 }
 
 
