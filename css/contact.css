@@ -51,3 +51,53 @@ li, a, button {
 .nav-links li a:hover {
     color: #0088a9;
 }
+button {
+    flex-wrap: wrap;
+    padding: 7px 18px;
+    background-color: rgb(13, 155, 191);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover {
+    background-color: rgba(0,136,169,0.8);
+}
+
+
+.home-page-heading{
+    color: white;
+    margin-top: 90px;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 500;   
+}
+
+.home-page-description{
+    text-align: center;
+    color: rgb(151, 146, 146);
+    font-size: 13px;
+}
+
+.home-page-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+.home-page-button .home-page-button-1{
+    margin: 20px;
+    padding: 10px 20px;
+    background-color: purple;
+    border-radius: 5px;
+    border: none;
+}
+
+.home-page-button .home-page-button-2{
+   padding: 10px 20px;
+   background-color: black;
+   border: none;
+   border-radius: 5px;
+}
+
