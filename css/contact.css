@@ -131,3 +131,17 @@ button:hover {
     padding-bottom: 17px;
 }
 
+.secondblock{
+    grid-row:auto ;
+    grid-column: 5/6 ;
+    width: 450px;
+    height: 350px;
+    background-color:#B7B2F0 ;
+    padding: 1px 20px;
+    border: none;
+    border-radius: 10px;
+    font-size: 24px;
+    margin: 10px 10px;
+    
+}
+
