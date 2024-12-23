@@ -5,7 +5,8 @@ body{
     margin: 0;
     padding: 0;
     font-family: 'poppins', sans-serif;
-    padding: 20px 90px;
+    background-color: #000000; 
+    background-size: 300% 300%;
     background-image: linear-gradient(45deg, #161144, #210D26, #24243E);
     animation: bg 12s ease infinite;
     bottom:  0;
@@ -29,12 +30,18 @@ body{
     align-items: center;
     padding: 15px 10%;
     height: 30px;
-    background-color: #1B1B1B;
-    border-radius: 20px;
+    background-color: #26072d;
+    border: 1px solid  #8e2de2;
+    border-radius: 15px;
+    
+    margin: 50px 70px;
+    box-shadow: 0 0 50px #000000 ;
 }
 
 .logo{
     color: #fff;
+    height: 110px;
+    width: 110px;
 }
 
 .logo {
@@ -59,7 +66,19 @@ body{
     color: #0088a9;
 }
 
-button {
+.login-btn{
+    border-radius: 20px;
+    background-color: #fff;
+    color: #8E2DE2;
+    border: none;
+    padding: 10px 30px;
+    font-size: 15px;
+}
+
+
+
+
+.button {
     flex-wrap: wrap;
     padding: 7px 18px;
     background-color: rgb(13, 155, 191);
@@ -70,7 +89,7 @@ button {
     
 }
 
-button:hover {
+.button:hover {
     background-color: rgba(0,136,169,0.8);
     
 }
@@ -80,6 +99,22 @@ li, a, button {
     font-size: 14px;
     color: rgba(250, 247, 247, 0.945);
     text-decoration: none;
+}
+
+.line-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 100px;
+    
+}
+
+.line{
+    height: 5px;
+    width: 500px;
+    color: #3c1261;
+    box-shadow: 10px 0 200px 20px #8e2de2;
+    background-image: linear-gradient(45deg, #21139c, #9641ac, #6060e5);
 }
 
 .main-page-heading{
@@ -98,21 +133,20 @@ li, a, button {
 }
 
 .sub-heading{
-    font-size: 30px;
+    font-size: 33px;
     color: #fff;
-    margin-top: 100px;
+    margin-top: 10px;
+    padding: 0 150px;
 }
 
 .sub-description{
     color: #fff;
+    padding: 0 180px;
     
 }
 
 .key-feature-container{
-    
-    
-    
-    
+   
 }
 
 .feature-card{ 
@@ -124,6 +158,7 @@ li, a, button {
     background: linear-gradient(to right, rgb(64, 41, 94),#06303e);
     border-radius: 15px;
     transition: transform 0.3s ease-in-out;
+    
     
 }
 .feature-card:hover{
@@ -175,12 +210,15 @@ li, a, button {
     padding:10px 25px;
     margin-left: 50px;
     margin-top: 15px;
+    border-radius: 20px;
+    background-color: #0088a9;
 }
 
 .working-container{
     display: flex;
     flex-wrap: wrap;
     margin-left: 65px;
+    padding: 0 90px;
 }
 
 .working-card-left{
@@ -195,7 +233,7 @@ li, a, button {
 /*background: linear-gradient(to right, rgb(98, 52, 158),#680c77);*/
 
 .working-card-left:hover{
-    box-shadow: 0 0 10px #8E2DE2;
+    box-shadow: 0 0 15px #8E2DE2;
 }
 
 .working-card-right{
@@ -208,7 +246,7 @@ li, a, button {
 }
 
 .working-card-right:hover{
-    box-shadow: 0 0 10px #8E2DE2;
+    box-shadow: 0 0 15px #8E2DE2;
 }
 
 
@@ -235,49 +273,25 @@ li, a, button {
     display: block;
     margin: 20px auto;
     margin-bottom: 40px;
+    border: none;
+    transition: transform 0.3s ease-in-out;
 }
 .butn:hover{
     background: linear-gradient(to right, rgb(37, 79, 134),#4d167d);
     transform: scale(1.2);
 }
 
-.footer-container{
-    padding: 50px;
-   
+.sticky-button{
+    border-radius: 10px;
+    height: 50px;
+    width: 50px;
+    border: solid 1px  #8E2DE2;
+    position: sticky;
+    top: 30px;
+    background-color: #8424d9;
 }
 
-.footer-content{
-    border-radius: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 500px;
-    width: 100%;
-    border: 2px solid white;
-}
 
-.footer-email-subsciption{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.footer-input-email{
-    padding: 12px 30px;
-    text-align: center;
-    color: white;
-    border: none;
-    background-color: #000000;
-    border-radius: 5px;
-    margin: 10px; 
-}
-
-.footer-subscribe-button{
-    padding: 10px 12px;
-    color: #000000;
-    border: none;
-    border-radius: 5px;
-}
 
 footer 
 {
