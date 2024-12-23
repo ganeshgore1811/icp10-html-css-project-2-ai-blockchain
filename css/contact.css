@@ -239,6 +239,13 @@ body{
     
 }
 
+.channels a:hover{
+    text-decoration-line: underline ;
+    text-decoration-style:solid ;
+    font-weight: bold;
+    transition: 0.25s;
+}
+
 
 
 
