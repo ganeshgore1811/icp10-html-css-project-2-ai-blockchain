@@ -3,20 +3,97 @@ body{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'poppins' , sans-serif;
-    padding: 20px 90px;
-    background-image:linear-gradient(360deg, #4B0082, #000000);
+    background-color: #160823;
+    font-family: 'poppins', sans-serif;
+    background-size: 300% 300%;
+    background-image: linear-gradient(45deg, #161144, #210D26, #24243E);
+    animation: bg 12s ease infinite;
+}
+.home-page-container{
+    margin-bottom: 100px;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 1000px;
+    padding: 15px 10%;
+    margin: 20px;
+    height: 30px;
+    background-color: #26072d;
+    border: 1px solid #8e2de2;
+    border-radius: 15px;
+    margin-bottom: 70px;
+    box-shadow: 0px 0px 50px #000;
+}
+.container li, a, button {
+    font-weight: 500;
+    font-size: 14px;
+    color: rgba(250, 247, 247, 0.945);
+    text-decoration: none;
+}
+
+.logo {
+    height: 70px;
+    cursor: pointer;
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+.nav-login{
+    padding: 8px 40px;
+    border-radius: 30px;
+    color: #000000;
+    background-color: white;
+    border: none;
+    transition: 0.5s;
+}
+.nav-login:hover{
+    background-color: #8e2de2;
+}
+.menu-icon{
+    height: 30px;
+}
+.nav-links li {
+    display: inline-block;
+    padding: 0px 15px;
+}
+
+.nav-links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav-links li a:hover {
+    color: #8e2de2;
+}
+.page-description{
+    text-align: center;
+    color: rgb(151, 146, 146);
+    font-size: 20px;
+    margin-bottom:10px;
 }
 header{
-    background: #1a202c;
     color: #fff;
     padding: 1px 2px;
     text-align: center;
 }
-.container{
-    background-color:  #1B1B1B;
+.btn{
+    margin: 20px;
+    padding: 10px 20px;
+    background-color: white;
+    color: #000000;
+    border-radius: 5px;
+    border: none;
+    font-weight: 500;
+    transition: 0.5s;
+}
+.text{
     color: #fff;
     padding: 2px;
+    text-align: center;
+}
+p{
     text-align: center;
 }
 .container h1{
@@ -27,7 +104,6 @@ header{
 }
 .container a{
     display: inline-block;
-    background: purple;
     color: white;
     padding: 0.5rem 1rem;
     text-decoration: none;
