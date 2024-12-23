@@ -246,7 +246,20 @@ body{
     transition: 0.25s;
 }
 
+.secondblock a{
+    color: #53506b;
+}
 
+.thiredblock a{
+    color: #a39167;
+}
+
+.channels img{
+    display: inline-block;
+    height: 20px;
+    font-weight: bold;
+    
+}
 
 
 
