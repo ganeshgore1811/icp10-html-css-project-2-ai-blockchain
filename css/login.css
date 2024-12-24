@@ -12,3 +12,16 @@ body{
     animation: bg 12s ease infinite;
 } 
 
+@keyframes bg{
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 0% 30%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+}
+
+
