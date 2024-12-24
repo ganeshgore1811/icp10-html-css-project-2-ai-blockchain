@@ -297,3 +297,215 @@ body{
     text-decoration: underline;
 }
 
+@media only screen and (min-width: 769px) {
+    body{
+        margin: 50px;
+    }
+    .menu-icon{
+        display: none;
+    }
+    .section-main-info {
+        padding: 15px;
+    }
+    
+    }
+    
+    @media only screen and (min-width: 601px) and (max-width: 768px) {
+    .menu-icon{
+        display: none;
+    }
+    .container li, a, button{
+        font-size: 10px;
+    }
+    .nav-login{
+        display: none;
+    }
+    
+    .container li, a nav{
+        font-size: 12px;
+    }
+    
+    .home-page-heading {
+        font-size: 1.8rem;
+    }
+    
+    .page-description {
+        font-size: 13px;
+    }
+    
+    
+    .section-main-info div{
+        color: white;
+        margin: 50px;
+    }
+    
+    .section-page-card{
+        margin: 10px;
+    }
+    
+    .section-card img{
+        height: 100%;
+        width: 100%; 
+    }
+    
+    .section-advantages-container{
+        margin: 10px;
+    }
+    
+    .section-advantages-card-area{
+        margin: 10px;
+    }
+    
+    .section-crypto-div div{
+        min-height: 100px;
+        max-width: 100px;
+    }
+    
+    .section-crypto-div div img{
+        display: block;
+        margin: auto;
+        max-height: 23px;
+        min-width: none;
+    }
+    
+    .section-crypto-div div p{
+        text-align: center;
+        font-size: 6px;
+        color: white;
+        padding-bottom: 10px;
+    }
+    
+    .section-crypto-div div span p{
+        font-size: 12px;    
+    
+    }
+    
+    .section-crypto-container{
+        margin: auto;
+        padding: auto;
+        flex-wrap: wrap;
+    }
+    
+    .section-pricing-container{
+        margin: 25px;
+    }
+    .page-description {
+        font-size: 10px;
+    }
+    
+    .pricing-cards div {
+        width: 90%;
+        margin: 10px 50px;
+    }
+    
+    .footer-container {
+        padding: 10px;
+        margin: 50px;
+    }
+    
+    .footer-input-email{
+        padding: 12px 10px;
+    }
+    }
+    
+    @media only screen and (max-width: 600px){
+    body{
+        margin: 10px
+    }
+    .logo-1{
+        display: none;
+    }
+    .container li, a, button {
+        display: none;
+    }
+    .container img{
+        height: 40px;
+    }
+    
+    .page-heading{
+        font-size: 17px;
+    }
+    .page-description{
+        font-size: 7px;
+        text-wrap: wrap;
+    }
+    .home-page-heading {
+        font-size: 17px;
+    }
+    
+    .section-main-info div{
+        color: white;
+        margin: 10px;
+    }
+    .section-page-card{
+        margin: 10px;
+    }
+    
+    .section-card img{
+        height: 100%;
+        width: 100%; 
+    }
+    
+    .section-advantages-container{
+        margin: 10px;
+    }
+    
+    .section-advantages-card-area{
+        margin: 10px;
+    }
+    
+    .section-crypto-div div{
+        min-height: 100px;
+        max-width: 100px;
+    }
+    
+    .section-crypto-div div img{
+        display: block;
+        margin: auto;
+        max-height: 23px;
+        min-width: none;
+    }
+    
+    .section-crypto-div div p{
+        text-align: center;
+        font-size: 6px;
+        color: white;
+        padding-bottom: 10px;
+    }
+    
+    .section-crypto-div div span p{
+        font-size: 12px;    
+    
+    }
+    
+    .section-crypto-container{
+        margin: auto;
+        padding: auto;
+        flex-wrap: wrap;
+    }
+    
+    .section-pricing-container{
+        margin: 25px;
+    }
+    .page-description {
+        font-size: 10px;
+    }
+    
+    .pricing-cards div {
+        width: 90%;
+        margin: 10px auto;
+    }
+    
+    .footer-container {
+        padding: 10px;
+        margin: 10px;
+    }
+    
+    .footer-input-email{
+        padding: 12px 10px;
+    }
+    
+    .login-container{
+        height: auto;
+    }
+}
