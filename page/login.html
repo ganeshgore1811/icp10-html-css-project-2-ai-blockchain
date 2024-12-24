@@ -4,8 +4,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+    <link rel="stylesheet" href="../css/login.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
+    <div class="home-page-container">
+        <div class="container">
+            <img src="../icon/home-page-icons/navbar-logo.png" class="logo">
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="../home.html">Home</a></li>
+                    <li><a href="../page/technology.html">Technology</a></li>
+                    <li><a href="../page/innovation.html">Innvoation</a></li>
+                    <li><a href="../page/about.html">About</a></li>
+                    <li><a href="../page/blog.html">Blog</a></li>
+                    <li><a href="../page/resources.html">Resources</a></li>
+                </ul>
+            </nav>
+            <a href="../page/login.html"><button class="nav-login">login</button></a>
+            <img src="../icon/home-page-icons/home-icon-hamburger-menu.png" class="menu-icon">
+        </div>
+    </div>
     
+    <div class="login">
+        <div class="login-container">
+            <form action="">
+                <h1>Login</h1>
+                
+                <div class="input-box">
+                    <input type="text" placeholder="Username" required>
+                    <i class='bx bxs-user' ></i>
+                </div>
+                
+                <div class="input-box">
+                    <input type="password" placeholder="Password" required>
+                    <i class='bx bxs-lock-alt'></i>            
+                </div>
+                
+                <div class="remember-forget">
+                    <label><input type="checkbox" > Remember me</label>
+                    <a href="https://myaccount.google.com/intro/signinoptions/password" target="_blank">Forget password?</a>
+                </div>
+                
+                <button type="submit" class="btn">login</button>
+                
+                <div class="register">
+                    <p>Don't have an account? <a href="../page/sign-up.html">Register</a> </p>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="home-page-container">
+ 
+        <div class="line-container"><div class="line"></div></div>
+    </div>
 </body>
 </html>
