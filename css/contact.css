@@ -4,39 +4,72 @@ body{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    background-color: #160823;
     font-family: 'poppins', sans-serif;
-    padding: 20px 90px;
-    background-image: linear-gradient(360deg, #4B0082, #000000);
+    background-size: 300% 300%;
+    background-image: linear-gradient(45deg, #161144, #210D26, #24243E);
+    animation: bg 12s ease infinite;
+} 
+
+@keyframes bg{
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 0% 100%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
 }
 
 .container{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 1000px;
     padding: 15px 10%;
+    margin: 20px;
     height: 30px;
-    background-color: #1B1B1B;
-    border-radius: 20px;
+    background-color: #26072d;
+    border: 1px solid #8e2de2;
+    border-radius: 15px;
+    margin-bottom: 100px;
+    box-shadow: 0px 0px 50px #000;
 }
-
-li, a, button {
+.home-page-container{
+    margin-bottom: 100px;
+}
+.container li, a, button {
     font-weight: 500;
     font-size: 14px;
     color: rgba(250, 247, 247, 0.945);
     text-decoration: none;
 }
 
-.logo{
-    color: #fff;
-}
-
 .logo {
+    height: 70px;
     cursor: pointer;
 }
 
 .nav-links {
     list-style: none;
     display: flex;
+}
+
+.nav-login{
+    padding: 8px 40px;
+    border-radius: 30px;
+    color: #000000;
+    background-color: white;
+    border: none;
+    transition: 0.5s;
+}
+.nav-login:hover{
+    background-color: #8e2de2;
+}
+.menu-icon{
+    height: 30px;
 }
 
 .nav-links li {
@@ -49,9 +82,10 @@ li, a, button {
 }
 
 .nav-links li a:hover {
-    color: #0088a9;
+    color: #8e2de2;
 }
-button {
+
+.home-page-button-cta {
     flex-wrap: wrap;
     padding: 7px 18px;
     background-color: rgb(13, 155, 191);
@@ -61,23 +95,47 @@ button {
     transition: all 0.3s ease 0s;
 }
 
-button:hover {
-    background-color: rgba(0,136,169,0.8);
+.line-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+}
+
+.line{
+    height: 5px;
+    width: 500px;
+    color: #3c1261;
+    box-shadow: 10px 0 200px 20px #8e2de2;
+    background-image: linear-gradient(45deg, #21139c, #9641ac, #6060e5);
 }
 
 
 .home-page-heading{
     color: white;
-    margin-top: 90px;
     text-align: center;
     font-size: 2.5rem;
     font-weight: 500;   
 }
 
+.page-heading {
+    color: white;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 500; 
+    margin: 5px;
+}
+
 .home-page-description{
     text-align: center;
     color: rgb(151, 146, 146);
-    font-size: 13px;
+}
+
+.page-description{
+    text-align: center;
+    color: rgb(151, 146, 146);
+    font-size: 14px;
+    margin-bottom: 80px;
 }
 
 .home-page-button{
@@ -86,19 +144,31 @@ button:hover {
     justify-content: center;
     margin: 20px;
 }
-.home-page-button .home-page-button-1{
+.home-page-button-1{
     margin: 20px;
     padding: 10px 20px;
-    background-color: purple;
+    background-color: white;
+    color: #000000;
     border-radius: 5px;
     border: none;
+    font-weight: 500;
+    transition: 0.5s;
 }
 
-.home-page-button .home-page-button-2{
+.home-page-button-2{
    padding: 10px 20px;
    background-color: black;
    border: none;
    border-radius: 5px;
+   transition: 0.5s;
+}
+
+.home-page-button-1:hover{
+    color: #8e2de2;
+}
+
+.home-page-button-2:hover{
+    color: #8e2de2;
 }
 
 .title{
@@ -109,12 +179,12 @@ button:hover {
 
 .gridcontainer{
     display: grid;
-    grid-template-columns:  200px 200px 200px 200px 200px 200px ;
+    grid-template-columns:  250px 200px 250px 200px 200px 200px ;
     grid-template-rows:  400px 332px ;
-    gap: 20px;
+    gap: 0px;
     /* grid-template-columns: auto auto  auto ; */
     /* grid-template-rows: auto auto auto ; */
-    gap:10px;
+    
 }
 
 .firstblock{
@@ -122,12 +192,13 @@ button:hover {
     grid-column: span 2;
     background-color: #A6FCD3;
     height: auto ;
-    width: 750px;
-    padding: 1px 20px;
+    width: 800px;
+    padding: 10px 20px;
     border: none;
-    border-radius: 10px;
+    border-radius: 15px;
     font-size: 24px;
     margin: 10px;
+    margin-left: 20px;
     padding-bottom: 17px;
 }
 
@@ -139,7 +210,7 @@ button:hover {
     background-color:#B7B2F0 ;
     padding: 1px 20px;
     border: none;
-    border-radius: 10px;
+    border-radius: 15px;
     font-size: 24px;
     margin: 10px 10px;
     
@@ -154,7 +225,261 @@ button:hover {
     background-color: #FFE3A2;
     padding: 1px 20px;
     border: none;
-    border-radius: 10px;
+    border-radius: 15px;
     font-size: 24px;
     margin: 0px 10px ;
 }
+
+.channels a{
+    display: inline-block;
+    color: #239f63;
+    font-size: 16px;
+    padding: 8px;
+    
+    
+}
+
+.channels a:hover{
+    text-decoration-line: underline ;
+    text-decoration-style:solid ;
+    font-weight: bold;
+    transition: 0.25s;
+}
+
+.secondblock a{
+    color: #53506b;
+}
+
+.thiredblock a{
+    color: #a39167;
+}
+
+.channels img{
+    display: inline-block;
+    height: 20px;
+    font-weight: bold;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 769px) {
+    body{
+        margin: 50px;
+    }
+    .menu-icon{
+        display: none;
+    }
+    .section-main-info {
+        padding: 15px;
+    }
+    
+    }
+    
+    @media only screen and (min-width: 601px) and (max-width: 768px) {
+    .menu-icon{
+        display: none;
+    }
+    .container li, a, button{
+        font-size: 10px;
+    }
+    .nav-login{
+        display: none;
+    }
+    
+    .container li, a nav{
+        font-size: 12px;
+    }
+    
+    .home-page-heading {
+        font-size: 1.8rem;
+    }
+    
+    .page-description {
+        font-size: 13px;
+    }
+    
+    
+    .section-main-info div{
+        color: white;
+        margin: 50px;
+    }
+    
+    .section-page-card{
+        margin: 10px;
+    }
+    
+    .section-card img{
+        height: 100%;
+        width: 100%; 
+    }
+    
+    .section-advantages-container{
+        margin: 10px;
+    }
+    
+    .section-advantages-card-area{
+        margin: 10px;
+    }
+    
+    .section-crypto-div div{
+        min-height: 100px;
+        max-width: 100px;
+    }
+    
+    .section-crypto-div div img{
+        display: block;
+        margin: auto;
+        max-height: 23px;
+        min-width: none;
+    }
+    
+    .section-crypto-div div p{
+        text-align: center;
+        font-size: 6px;
+        color: white;
+        padding-bottom: 10px;
+    }
+    
+    .section-crypto-div div span p{
+        font-size: 12px;    
+    
+    }
+    
+    .section-crypto-container{
+        margin: auto;
+        padding: auto;
+        flex-wrap: wrap;
+    }
+    
+    .section-pricing-container{
+        margin: 25px;
+    }
+    .page-description {
+        font-size: 10px;
+    }
+    
+    .pricing-cards div {
+        width: 90%;
+        margin: 10px 50px;
+    }
+    
+    .footer-container {
+        padding: 10px;
+        margin: 50px;
+    }
+    
+    .footer-input-email{
+        padding: 12px 10px;
+    }
+    }
+    
+    @media only screen and (max-width: 600px){
+    body{
+        margin: 10px
+    }
+    .logo-1{
+        display: none;
+    }
+    .container li, a, button {
+        display: none;
+    }
+    .container img{
+        height: 40px;
+    }
+    
+    .page-heading{
+        font-size: 17px;
+    }
+    .page-description{
+        font-size: 7px;
+        text-wrap: wrap;
+    }
+    .home-page-heading {
+        font-size: 17px;
+    }
+    
+    .section-main-info div{
+        color: white;
+        margin: 10px;
+    }
+    .section-page-card{
+        margin: 10px;
+    }
+    
+    .section-card img{
+        height: 100%;
+        width: 100%; 
+    }
+    
+    .section-advantages-container{
+        margin: 10px;
+    }
+    
+    .section-advantages-card-area{
+        margin: 10px;
+    }
+    
+    .section-crypto-div div{
+        min-height: 100px;
+        max-width: 100px;
+    }
+    
+    .section-crypto-div div img{
+        display: block;
+        margin: auto;
+        max-height: 23px;
+        min-width: none;
+    }
+    
+    .section-crypto-div div p{
+        text-align: center;
+        font-size: 6px;
+        color: white;
+        padding-bottom: 10px;
+    }
+    
+    .section-crypto-div div span p{
+        font-size: 12px;    
+    
+    }
+    
+    .section-crypto-container{
+        margin: auto;
+        padding: auto;
+        flex-wrap: wrap;
+    }
+    
+    .section-pricing-container{
+        margin: 25px;
+    }
+    .page-description {
+        font-size: 10px;
+    }
+    
+    .pricing-cards div {
+        width: 90%;
+        margin: 10px auto;
+    }
+    
+    .footer-container {
+        padding: 10px;
+        margin: 10px;
+    }
+    
+    .footer-input-email{
+        padding: 12px 10px;
+    }
+    
+    }
+    
