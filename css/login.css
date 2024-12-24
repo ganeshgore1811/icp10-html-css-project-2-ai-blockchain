@@ -25,3 +25,154 @@ body{
 }
 
 
+.home-page-container{
+    margin: -30px -50px;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 1000px;
+    padding: 15px 10%;
+    margin: 20px;
+    height: 30px;
+    background-color: #26072d;
+    border: 1px solid #8e2de2;
+    border-radius: 15px;
+    margin-bottom: 100px;
+    box-shadow: 0px 0px 50px #000;
+}
+.home-page-container{
+    margin-bottom: 100px;
+}
+.container li, a, button {
+    font-weight: 500;
+    font-size: 14px;
+    color: rgba(250, 247, 247, 0.945);
+    text-decoration: none;
+}
+
+.logo {
+    height: 70px;
+    cursor: pointer;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-login{
+    padding: 8px 40px;
+    border-radius: 30px;
+    color: #000000;
+    background-color: white;
+    border: none;
+    transition: 0.5s;
+}
+.nav-login:hover{
+    background-color: #8e2de2;
+}
+.menu-icon{
+    height: 30px;
+}
+
+.nav-links li {
+    display: inline-block;
+    padding: 0px 15px;
+}
+
+.nav-links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav-links li a:hover {
+    color: #8e2de2;
+}
+
+.home-page-button-cta {
+    flex-wrap: wrap;
+    padding: 7px 18px;
+    background-color: rgb(13, 155, 191);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.line-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+}
+
+.line{
+    height: 5px;
+    width: 500px;
+    color: #3c1261;
+    box-shadow: 10px 0 200px 20px #8e2de2;
+    background-image: linear-gradient(45deg, #21139c, #9641ac, #6060e5);
+}
+
+
+.home-page-heading{
+    color: white;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 500;   
+}
+
+.page-heading {
+    color: white;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 500; 
+    margin: 5px;
+}
+
+.home-page-description{
+    text-align: center;
+    color: rgb(151, 146, 146);
+}
+
+.page-description{
+    text-align: center;
+    color: rgb(151, 146, 146);
+    font-size: 14px;
+    margin-bottom: 80px;
+}
+
+.home-page-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+.home-page-button-1{
+    margin: 20px;
+    padding: 10px 20px;
+    background-color: white;
+    color: #000000;
+    border-radius: 5px;
+    border: none;
+    font-weight: 500;
+    transition: 0.5s;
+}
+
+.home-page-button-2{
+    padding: 10px 20px;
+    background-color: black;
+    border: none;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+.home-page-button-1:hover{
+    color: #8e2de2;
+}
+
+.home-page-button-2:hover{
+    color: #8e2de2;
+}
