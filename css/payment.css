@@ -97,14 +97,18 @@ body{
 
 .payment-form button {
     width: 100%;
-    padding: 15px;
     background-color: white;
     color: black;
     border: none;
     border-radius: 8px;
-    font-size: 16px;
     cursor: pointer;
     transition: background-color 0.5s;
+}
+
+.payment-form a{
+    padding-top: 10px;
+    text-align: center;
+    margin-bottom: 0;
 }
 
 .payment-form button:hover {
