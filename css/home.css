@@ -736,11 +736,11 @@ padding-top: 10px;
     }
     
     .nav-login{
-        display: inline-block;
+        display: none;
     }
     
-    .container li, a nav{
-        font-size: 12px;
+    .container li, a{
+        font-size: 10px;
     }
     
     .home-page-heading {
