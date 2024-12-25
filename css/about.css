@@ -70,62 +70,13 @@ body{
 .nav-links li a:hover {
     color: #8e2de2;
 }
-
-.home-page-container{
-    margin-bottom: 100px;
-}
-.head li, a, button {
-    font-weight: 500;
-    font-size: 14px;
-    color: rgba(243, 244, 246, 0.945);
-    text-decoration: none;
-}
-
-.logo {
-    height: 70px;
-    cursor: pointer;
-}
-
-.nav-links {
-    list-style: none;
-    display: flex;
-}
-
-.nav-login{
-    padding: 8px 40px;
-    border-radius: 30px;
-    color: #000000;
-    background-color: white;
-    border: none;
-    transition: 0.5s;
-}
-.nav-login:hover{
-    background-color: #8e2de2;
-}
-.menu-icon{
-    height: 30px;
-}
-
-.nav-links li {
-    display: inline-block;
-    padding: 0px 15px;
-}
-
-.nav-links li a {
-    transition: all 0.3s ease 0s;
-}
-
-.nav-links li a:hover {
-    color: #8e2de2;
-}
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 .container{
-   width: 100%;
+   width: 90%;
    max-width: 1200;
    margin: 0 auto;
    color:#f7f7f7
@@ -182,18 +133,35 @@ p {
     
     
  }
- .nav-more{
-    padding: 8px 20px;
-    border-radius: 10px;
+ .nav-login{
+    padding: 8px 40px;
+    border-radius: 30px;
     color: #000000;
-    background-color: rgb(179, 177, 177);
+    background-color: white;
     border: none;
     transition: 0.5s;
 }
-.nav-more:hover{
+.nav-login:hover{
     background-color: #8e2de2;
 }
+.menu-icon{
+    height: 30px;
+}
 
+.nav-links li {
+    display: inline-block;
+    padding: 0px 15px;
+}
+
+.nav-links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav-links li a:hover {
+    color: #8e2de2;
+}
+
+    
 
 .footer-container{
     padding: 50px;
@@ -247,7 +215,7 @@ footer
 {
 background-color:#080209;
 color: #fff;
-padding: 5px 0;
+padding: 5px 20px;
 text-align: center;
 font-family: Arial, sans-serif;
 }
@@ -257,7 +225,7 @@ display: flex;
 justify-content: space-around;
 flex-wrap: wrap;
 max-width: 1200px;
-margin: 0 auto;
+margin: 100px auto;
 }
 
 .footer-section {
