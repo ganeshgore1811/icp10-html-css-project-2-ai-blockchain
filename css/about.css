@@ -9,6 +9,7 @@ body{
     background-image: linear-gradient(45deg, #161144, #210D26, #24243E);
     animation: bg 12s ease infinite;
 }
+
  .head{
     display: flex;
     justify-content: space-between;
@@ -160,9 +161,6 @@ p {
 .nav-links li a:hover {
     color: #8e2de2;
 }
-
-    
-
 .footer-container{
     padding: 50px;
     margin: 0 60px;
