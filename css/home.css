@@ -85,15 +85,6 @@ body{
     color: #8e2de2;
 }
 
-.home-page-button-cta {
-    flex-wrap: wrap;
-    padding: 7px 18px;
-    background-color: rgb(13, 155, 191);
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: all 0.3s ease 0s;
-}
 
 .line-container {
     display: flex;
@@ -314,14 +305,19 @@ body{
     flex-wrap: wrap;
 }
 
+
 .section-card {
     max-height: 350px;
     max-width: 400px;
     margin: 20px;
-    border: 0.8px solid #4B0082;
+    border: 1px solid #8E2DE2;
     border-radius: 20px;
     padding: 10px;
-   
+    transition: 0.5s;
+}
+
+.section-card:hover{
+    box-shadow: 0px 0px 10px#8E2DE2;
 }
 
 
@@ -347,14 +343,12 @@ body{
 
 .section-card-button{
     padding: 8px 20px;
-    background-color: #1B1B1B;
+    background-color: #ffffff;
+    color: #000;
     border-radius: 40px;
     margin: 15px 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 9px;
-    border: 1px solid #4B0082;
+    font-size: 10px;
+    border: 1px solid #8E2DE2;
     transition: 0.5s;
 } 
 .section-card-button i{
@@ -385,9 +379,10 @@ body{
     margin: 20px; 
     border-radius: 20px;
     transition: 0.5s;
-    box-shadow: 0 0 30px #080209;
+    border: 1px solid #8E2DE2;
     flex: 1 1 200px;
     max-width: 250px;
+    transition: 0.5s;
 }
 
 .section-advantages-boxes:hover {
@@ -541,8 +536,8 @@ body{
 
 .pricing-cards div{
     border-radius: 20px;
-    height: 450px;
-    width: 200px;
+    height: 500px;
+    width: 220px;
     margin: 10px;
     transition: 0.5s;
     border: 1px solid #8E2DE2;
@@ -576,7 +571,7 @@ body{
 }
 
 .pricing-cards-info li{
-    font-size: 9px;
+    font-size: 10px;
     font-weight: 300;
 }
 
@@ -722,9 +717,7 @@ padding-top: 10px;
 
 
 @media only screen and (min-width: 769px) {
-body{
-    margin: 50px;
-}
+
 .menu-icon{
     display: none;
 }
@@ -735,115 +728,63 @@ body{
 }
 
 @media only screen and (min-width: 601px) and (max-width: 768px) {
+    .menu-icon{
+        display: none;
+    }
+    .container li{
+        font-size: 10px;
+    }
+    
+    .nav-login{
+        display: none;
+    }
+    
+    .container li, a{
+        font-size: 10px;
+    }
+    
+    .home-page-heading {
+        font-size: 1.8rem;
+    }
+    
+    .page-description {
+        font-size: 13px;
+    }
+    
+    .section-main-info div{
+        color: white;
+        margin: 50px;
+    }
+    .responsive-button{
+        display: block;
+        font-size: 10px;
+        padding: 8px 10px;
+    }
+}
+    
+@media only screen and (max-width: 600px){
 .menu-icon{
-    display: none;
+    height: 10px;
 }
-.container li, a, button{
-    font-size: 10px;
-}
+
 .nav-login{
     display: none;
 }
 
-.container li, a nav{
-    font-size: 12px;
-}
-
-.home-page-heading {
-    font-size: 1.8rem;
-}
-
-.page-description {
-    font-size: 13px;
-}
-
-
-.section-main-info div{
-    color: white;
-    margin: 50px;
-}
-
-.section-page-card{
-    margin: 10px;
-}
-
-.section-card img{
-    height: 100%;
-    width: 100%; 
-}
-
-.section-advantages-container{
-    margin: 10px;
-}
-
-.section-advantages-card-area{
-    margin: 10px;
-}
-
-.section-crypto-div div{
-    min-height: 100px;
-    max-width: 100px;
-}
-
-.section-crypto-div div img{
-    display: block;
-    margin: auto;
-    max-height: 23px;
-    min-width: none;
-}
-
-.section-crypto-div div p{
-    text-align: center;
-    font-size: 6px;
-    color: white;
-    padding-bottom: 10px;
-}
-
-.section-crypto-div div span p{
-    font-size: 12px;    
-
-}
-
-.section-crypto-container{
-    margin: auto;
-    padding: auto;
-    flex-wrap: wrap;
-}
-
-.section-pricing-container{
-    margin: 25px;
-}
-.page-description {
-    font-size: 10px;
-}
-
-.pricing-cards div {
-    width: 90%;
-    margin: 10px 50px;
-}
-
-.footer-container {
-    padding: 10px;
-    margin: 50px;
-}
-
-.footer-input-email{
-    padding: 12px 10px;
-}
-}
-
-@media only screen and (max-width: 600px){
-body{
-    margin: 10px
-}
-.logo-1{
-    display: none;
-}
-.container li, a, button {
+.container li {
     display: none;
 }
 .container img{
     height: 40px;
+}
+.responsive-button{
+    display: block;
+    font-size: 10px;
+    padding: 8px 10px;
+}
+
+.responsive-text-input{
+    padding: 8px 12px;
 }
 
 .page-heading{
@@ -925,8 +866,5 @@ body{
     margin: 10px;
 }
 
-.footer-input-email{
-    padding: 12px 10px;
-}
 
 }
