@@ -150,7 +150,7 @@ p {
     transition: 0.5s;
 }
 .nav-login:hover{
-    background-color: #8e2de2;
+    background-color:  #461f49;
 }
 .menu-icon{
     height: 30px;
@@ -166,7 +166,7 @@ p {
 }
 
 .nav-links li a:hover {
-    color: #0c70d3;
+    color:  #461f49;
 }
 .footer-container{
     padding: 50px;
