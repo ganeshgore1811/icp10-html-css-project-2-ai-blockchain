@@ -40,8 +40,8 @@ body{
 
 .logo{
     color: #fff;
-    height: 70px;
-    width: 70px;
+    height: 80px;
+    width: 80x;
 }
 
 .logo {
@@ -136,8 +136,8 @@ li, a, button {
 .sub-heading{
     font-size: 33px;
     color: #fff;
-    
     padding: 0 150px;
+    margin-bottom: 50px;
 }
 
 .sub-description{
@@ -167,14 +167,22 @@ li, a, button {
 }
 
 
-.feature-image{
+.feature-image-left{
     height: 350px;
     width: 350px;
     border-radius: 15px;
     justify-content: center;
     margin: 50px 0;
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left: 60px;
+    
+}
+.feature-image-right{
+    height: 350px;
+    width: 350px;
+    border-radius: 15px;
+    justify-content: center;
+    margin: 50px 0;
+    margin-right: 60px;
 }
 
 
@@ -290,8 +298,8 @@ li, a, button {
     position: sticky;
     bottom: 30px;
     background-color: #8424d9;
-    margin-left: 94%;
-    margin-bottom: 30px;
+    margin-left: 93.5%;
+    margin-bottom: 50px;
 }
 
 
