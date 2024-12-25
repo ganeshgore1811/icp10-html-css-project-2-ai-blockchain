@@ -9,6 +9,17 @@ body{
     background-image: linear-gradient(45deg, #161144, #210D26, #24243E);
     animation: bg 12s ease infinite;
 }
+@keyframes bg{
+    0%{
+    background-position: 0% 50%;
+    }
+    50%{
+    background-position: 0% 100%;
+    }
+    100%{
+    background-position: 0% 50%;
+    }
+}
 
 .container{
     display: flex;
@@ -98,7 +109,7 @@ header{
 .page-heading{
     color: white;
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 2.0rem;
     font-weight: 500; 
     margin: 5px;
 }
@@ -112,9 +123,10 @@ header{
 .text{
     color: #fff;
     padding: 2px;
+    font-size: 18px;
     text-align: center;
 }
-p{
+.page-solution{
     text-align: center;
 }
 .container h1{
@@ -158,7 +170,7 @@ section{
     text-align: center;
 }
 .list{
-    padding-left: 400px;
+    padding-left: 450px;
 }
 .footer-container{
     padding: 50px;
@@ -285,3 +297,84 @@ margin-top: 30px;
 font-size: 14px;
 padding-top: 10px;
 }
+
+/* Mobile  */
+@media(max-width: 600px) {
+.container{
+    margin-bottom: 20px;
+}
+.nav-login{
+display: none;
+}
+.container li, a {
+display: none;
+}
+.container img{
+height: 40px;
+}    
+.page-heading{
+font-size: 0.5 rem;
+}
+.page-description{
+margin-top: 10px;
+font-size: 15px;
+text-wrap: wrap;
+}
+.home-page-heading {
+font-size: 17px;
+} 
+.features, .industries{
+gap: 1rem;
+}
+.list{
+padding-left: 30px;
+} 
+.footer-container {
+padding: 10px;
+margin: 10px;
+}  
+}
+ /* Tablet  */
+@media(min-width: 601px) and (max-width: 800px) {
+.menu-icon{
+display: none;
+}
+.container li, a, button{
+font-size: 10px;
+}
+.nav-login{
+display: none;
+}
+    
+.container li, a nav{
+font-size: 12px;
+}
+    
+.home-page-heading {
+font-size: 1.8rem;
+}
+    
+.page-description {
+font-size: 13px;
+}
+
+    
+.footer-container {
+padding: 10px;
+margin: 50px;
+}
+.responsive-text-input{
+padding: 8px 20px;
+}
+    
+}
+  /* Laptop  */
+@media (min-width: 801px) and (max-width: 1024px){
+.menu-icon{
+display: none;
+}
+
+    
+}
+
+    
