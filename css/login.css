@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+
 body{
     box-sizing: border-box;
     margin: 0;
@@ -16,11 +17,16 @@ body{
         background-position: 0% 50%;
     }
     50%{
-        background-position: 0% 100%;
+        background-position: 0% 30%;
     }
     100%{
         background-position: 0% 50%;
     }
+}
+
+
+.home-page-container{
+    margin: -30px -50px;
 }
 
 .container{
@@ -156,11 +162,11 @@ body{
 }
 
 .home-page-button-2{
-   padding: 10px 20px;
-   background-color: black;
-   border: none;
-   border-radius: 5px;
-   transition: 0.5s;
+    padding: 10px 20px;
+    background-color: black;
+    border: none;
+    border-radius: 5px;
+    transition: 0.5s;
 }
 
 .home-page-button-1:hover{
@@ -170,108 +176,126 @@ body{
 .home-page-button-2:hover{
     color: #8e2de2;
 }
-
-.title{
-    color: hsl(0, 0%, 92%);
+.login{
     display: flex;
     justify-content: center;
+    align-items: center; 
+    min-height: 75vh;
 }
 
-.gridcontainer{
-    display: grid;
-    grid-template-columns:  250px 200px 250px 200px 200px 200px ;
-    grid-template-rows:  400px 332px ;
-    gap: 0px;
-    /* grid-template-columns: auto auto  auto ; */
-    /* grid-template-rows: auto auto auto ; */
-    
-}
-
-.firstblock{
-    grid-row: span 2;
-    grid-column: span 2;
-    background-color: #A6FCD3;
-    height: auto ;
-    width: 800px;
-    padding: 10px 20px;
-    border: none;
+.login-container{
+    width: 380px;
+    background-color: transparent;
+    border: 1px solid #8E2DE2;
+    backdrop-filter:blur(20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    color: #fff;
     border-radius: 15px;
-    font-size: 24px;
-    margin: 10px;
-    margin-left: 20px;
-    padding-bottom: 17px;
+    padding: 30px 40px;
 }
 
-.secondblock{
-    grid-row:auto ;
-    grid-column: 5/6 ;
-    width: 450px;
-    height: 350px;
-    background-color:#B7B2F0 ;
-    padding: 1px 20px;
+.login-container:hover{
+    box-shadow: 0px 0px 5px#8E2DE2;
+    transition: ease 0.5s;
+}
+
+.login-container h1{
+    font-size: 36px;
+    text-align: center;
+}
+
+.login-container .input-box{
+    position: relative;
+    width: 85%;
+    height: 25px;
+    margin: 55px 0;
+}
+
+.input-box input{
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
     border: none;
-    border-radius: 15px;
-    font-size: 24px;
-    margin: 10px 10px;
-    
-}
-
-.thiredblock{
-    grid-row: 2;
-    grid-column: 5/6;
-    
-    width: 450px;
-    height: 320px;
-    background-color: #FFE3A2;
-    padding: 1px 20px;
-    border: none;
-    border-radius: 15px;
-    font-size: 24px;
-    margin: 0px 10px ;
-}
-
-.channels a{
-    display: inline-block;
-    color: #239f63;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, .2 );
+    border-radius: 40px;
     font-size: 16px;
-    padding: 8px;
-    
-    
+    color: #fff;
+    padding: 15px 35px 15px 20px;
 }
 
-.channels a:hover{
-    text-decoration-line: underline ;
-    text-decoration-style:solid ;
-    font-weight: bold;
-    transition: 0.25s;
+.input-box input::placeholder{
+    color: #fff;
 }
 
-.secondblock a{
-    color: #53506b;
+.input-box i{
+    position: absolute;
+    left: 350px;
+    top: 120%;
+    transform: translateY(-50%);
+    font-size: 20px;
+
 }
 
-.thiredblock a{
-    color: #a39167;
+.login-container .remember-forget{
+    display: flex;
+    justify-content: space-between;
+    font-size: 14.5px;
+    margin: 0px 0 15px ;
 }
 
-.channels img{
-    display: inline-block;
-    height: 20px;
-    font-weight: bold;
-    
+.remember-forget label input{
+    accent-color: #fff;
+    margin-right: 3px;
 }
 
+.remember-forget a{
+    color: #fff;
+    font-size: 14px;
+    text-decoration: none;
+}
 
+.remember-forget a:hover{
+    text-decoration: underline;
+}
 
+.login-container .btn{
+    width: 100%;
+    height: 45px;
+    background-color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 18px;
+    color: #333;
+    font-weight: 600;
+}
 
+.login-container .btn:hover{
+    color: black;
+    background-color: #8e2de2;
+    transition: ease 0.5s;
+    box-shadow: 0 0 5px #333;
+}
 
+.login-container .register{
+    font-size: 16px;
+    text-align: center;
+    margin: 20px 0 15px;
+}
 
+.register p a{
+    font-size: 16px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
 
-
-
-
-
-
+.register p a:hover{
+    text-decoration: underline;
+}
 
 @media only screen and (min-width: 769px) {
     body{
@@ -481,5 +505,8 @@ body{
         padding: 12px 10px;
     }
     
+    .login-container{
+        height: auto;
     }
     
+}
