@@ -121,10 +121,13 @@ header{
     background-image: linear-gradient(45deg, #21139c, #9641ac, #6060e5);
 }
 .text{
-    color: #fff;
+    color: rgb(151, 146, 146);
     padding: 2px;
     font-size: 18px;
     text-align: center;
+}
+.head-text{
+    margin-bottom: 20px;
 }
 .page-solution{
     text-align: center;
@@ -153,6 +156,9 @@ section{
     gap: 2rem;
     justify-content: center ;
 }
+.card:hover{
+    box-shadow: 0px 0px 10px#8E2DE2;
+}
 .card{
     background-color:#240739de;
     padding: 1.5rem;
@@ -168,6 +174,9 @@ section{
     border-radius: 8px;
     max-width: 600px;
     text-align: center;
+}
+.testimonial:hover{
+    box-shadow: 0px 0px 10px#8E2DE2;
 }
 .list{
     padding-left: 450px;
@@ -298,83 +307,99 @@ font-size: 14px;
 padding-top: 10px;
 }
 
-/* Mobile  */
-@media(max-width: 600px) {
-.container{
-    margin-bottom: 20px;
-}
-.nav-login{
-display: none;
-}
-.container li, a {
-display: none;
-}
-.container img{
-height: 40px;
-}    
-.page-heading{
-font-size: 0.5 rem;
-}
-.page-description{
-margin-top: 10px;
-font-size: 15px;
-text-wrap: wrap;
-}
-.home-page-heading {
-font-size: 17px;
-} 
-.features, .industries{
-gap: 1rem;
-}
-.list{
-padding-left: 30px;
-} 
-.footer-container {
-padding: 10px;
-margin: 10px;
-}  
-}
- /* Tablet  */
-@media(min-width: 601px) and (max-width: 800px) {
-.menu-icon{
-display: none;
-}
-.container li, a, button{
+@media only screen and (min-width: 769px) {
+
+    .menu-icon{
+        display: none;
+    }
+    .section-main-info {
+        padding: 15px;
+    }
+    
+    }
+    
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+.container li{
 font-size: 10px;
 }
+.menu-icon{
+    display: none;
+}
+        
 .nav-login{
 display: none;
 }
-    
-.container li, a nav{
-font-size: 12px;
+        
+.container li, a{
+font-size: 10px;
 }
-    
+        
 .home-page-heading {
-font-size: 1.8rem;
+font-size: 1.5rem;
 }
-    
 .page-description {
-font-size: 13px;
+font-size: 18px;
 }
-
-    
-.footer-container {
-padding: 10px;
-margin: 50px;
+.text{
+    font-size: 16px;
 }
-.responsive-text-input{
-padding: 8px 20px;
+.list{
+    padding-left: 30px;
 }
-    
+.btn{
+    padding: 13px 30px;
 }
-  /* Laptop  */
-@media (min-width: 801px) and (max-width: 1024px){
+}
+        
+@media only screen and (max-width: 600px){
 .menu-icon{
-display: none;
+    height: 10px;
+}
+.container{
+    margin-bottom: 50px;
+}
+.nav-login{
+    display: none;
 }
 
-    
+.container li {
+    display: none;
+}
+.container img{
+    height: 40px;
+}
+
+.page-heading{
+    font-size: 25px;
+}
+.page-description{
+    margin-top: 10px;
+    font-size: 18px;
+    text-wrap: wrap;
+}
+.home-page-heading {
+    font-size: 17px;
+}
+.text{
+    font-size: 12px;
+}
+.head-text{
+    margin-bottom: 35px;
+}
+.features, .industries{
+    gap: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+.list{
+    padding-left: 30px;
+}
+
+.footer-container {
+    padding: 10px;
+    margin: 10px;
+}
+
 }
 
     
