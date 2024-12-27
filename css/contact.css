@@ -673,14 +673,18 @@ body{
     .firstblock{
         grid-column: 1;
         grid-row: 1 ;
+        font-size: 19px;
         
     }
     .secondblock{
         grid-column:  1;
         grid-row: 2 ;
+        font-size: 19px;
+
     }
     .thiredblock{
         grid-column:  1;
         grid-row: 3 ;
+        font-size: 18px;
     }
 }
