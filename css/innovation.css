@@ -1,4 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+.body{
+    background-color: #160823;
+    font-family: 'poppins', sans-serif;
+    background-size: 300% 300%;
+    background-image: linear-gradient(45deg, #161144, #210D26, #24243E);
+    animation: bg 12s ease infinite;
+} 
 
 .container{
     display: flex;
@@ -89,8 +96,6 @@
     background-image: linear-gradient(45deg, #21139c, #9641ac, #6060e5);
 }
 
-
-
 .survey{
     background-color: bisque;
    padding: 20px;
@@ -144,7 +149,7 @@
     width: 150px;
     height: 50px;
     display: flex;
-    float: left;
+    float: left; 
 }
 .btn:hover{
     transition:2sec;
@@ -333,6 +338,13 @@ padding-top: 10px;
     border-top: 5px dashed black;
     height: 400px;
  }
+ .menu-icon{
+    height: 10px;
+}
+
+.nav-login{
+    display: none;
+}
  .body-container-2{
     height: auto;
     width: auto;
