@@ -5,9 +5,23 @@ body{
     margin: 0;
     padding: 0;
     font-family: 'poppins', sans-serif;
-    padding: 20px 90px;
-    background-image: linear-gradient(360deg, #4B0082, #000000);
+    background-color: #000000; 
+    background-size: 300% 300%;
+    background-image: linear-gradient(45deg, #161144, #210D26, #24243E);
+    animation: bg 12s ease infinite;
     bottom:  0;
+}
+
+@keyframes bg{
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 0% 100%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
 }
 
 .container{
@@ -16,12 +30,18 @@ body{
     align-items: center;
     padding: 15px 10%;
     height: 30px;
-    background-color: #1B1B1B;
-    border-radius: 20px;
+    background-color: #26072d;
+    border: 1px solid  #8e2de2;
+    border-radius: 15px;
+    
+    margin: 50px 70px;
+    box-shadow: 0 0 50px #000000 ;
 }
 
 .logo{
     color: #fff;
+    height: 80px;
+    width: 80x;
 }
 
 .logo {
@@ -46,7 +66,19 @@ body{
     color: #0088a9;
 }
 
-button {
+.login-btn{
+    border-radius: 20px;
+    background-color: #fff;
+    color:#26072d ;
+    border: none;
+    padding: 8px 40px;
+    font-size: 14px;
+}
+
+
+
+
+.button {
     flex-wrap: wrap;
     padding: 7px 18px;
     background-color: rgb(13, 155, 191);
@@ -54,10 +86,12 @@ button {
     border-radius: 50px;
     cursor: pointer;
     transition: all 0.3s ease 0s;
+    
 }
 
-button:hover {
+.button:hover {
     background-color: rgba(0,136,169,0.8);
+    
 }
 
 li, a, button {
@@ -67,7 +101,23 @@ li, a, button {
     text-decoration: none;
 }
 
-.home-page-heading{
+.line-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 100px;
+    
+}
+
+.line{
+    height: 5px;
+    width: 500px;
+    color: #3c1261;
+    box-shadow: 10px 0 200px 20px #8e2de2;
+    background-image: linear-gradient(45deg, #21139c, #9641ac, #6060e5);
+}
+
+.main-page-heading{
     color: white;
     margin-top: 90px;
     text-align: center;
@@ -75,20 +125,260 @@ li, a, button {
     font-weight: 500;   
 }
 
-.home-page-heading-description{
+.main-page-heading-description{
     text-align: center;
     color: white;
     font-size: 1.5rem;
+    margin-bottom: 70px;
     
 }
 
 .sub-heading{
-    font-size: 30px;
+    font-size: 33px;
     color: #fff;
-    margin-top: 100px;
+    padding: 0 150px;
+    margin-bottom: 50px;
 }
 
 .sub-description{
     color: #fff;
+    padding: 0 180px;
     
 }
+
+.key-feature-container{
+   
+}
+
+.feature-card{ 
+   
+    width: 1200px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: row;
+    background: linear-gradient(to right, rgb(64, 41, 94),#06303e);
+    border-radius: 15px;
+    transition: transform 0.3s ease-in-out;
+    
+    
+}
+.feature-card:hover{
+    transform: scale(1.05);
+}
+
+
+.feature-image-left{
+    height: 350px;
+    width: 350px;
+    border-radius: 15px;
+    justify-content: center;
+    margin: 50px 0;
+    margin-left: 60px;
+    
+}
+.feature-image-right{
+    height: 350px;
+    width: 350px;
+    border-radius: 15px;
+    justify-content: center;
+    margin: 50px 0;
+    margin-right: 60px;
+}
+
+
+.feature-description-odd{
+    margin-left: 50px;
+    margin-top: 50px;
+    font-size: 32px;
+    color: #fff;
+}
+.feature-description-even{
+    margin-left: 50px;
+    margin-top: 50px;
+    font-size: 32px;
+    color: #fff;
+}
+
+.feature-description-para-odd{
+    font-size: 19px;
+    margin-left: 50px;
+    text-align:justify;
+    margin-right: 50px;
+    color: #fff;
+}
+.feature-description-para-even{
+    margin-left: 50px;
+    font-size: 19px;
+    text-align:justify;
+    margin-right: 50px;
+    color: #fff;
+}
+
+.btn{
+    border: none;
+    padding:10px 25px;
+    margin-left: 50px;
+    margin-top: 15px;
+    border-radius: 20px;
+    background-color: #0088a9;
+}
+
+.working-container{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 65px;
+    padding: 0 90px;
+}
+
+.working-card-left{
+    height: 200px;
+    width: 600px;
+    border-radius: 15px;
+    border: solid 1px  #8E2DE2;
+    margin: 20px 20px; 
+    transition: 0.5s;     
+}
+
+/*background: linear-gradient(to right, rgb(98, 52, 158),#680c77);*/
+
+.working-card-left:hover{
+    box-shadow: 0 0 15px #8E2DE2;
+}
+
+.working-card-right{
+    height: 200px;
+    width: 600px;
+    border-radius: 15px;
+    margin: 20px 20px;
+    border: solid 1px  #8E2DE2; 
+    transition: 0.5s; 
+}
+
+.working-card-right:hover{
+    box-shadow: 0 0 15px #8E2DE2;
+}
+
+
+.step-heading{
+    text-align: center;
+    font-size: 24px;
+    padding-top: 15px;
+    color: #fff;
+}
+
+.step-paragrapgh{
+    text-align: center;
+    font-size: 18px;
+    padding-left: 30px;
+    padding-right: 30px;
+    color: #fff;
+}
+
+.butn{
+    background: linear-gradient(to right, rgb(41, 3, 90),#1b5568);
+    border-radius: 10px;
+    padding: 10px 30px;
+    font-size: 20px;
+    display: block;
+    margin: 20px auto;
+    margin-bottom: 40px;
+    border: none;
+    transition: transform 0.3s ease-in-out;
+}
+.butn:hover{
+    background: linear-gradient(to right, rgb(37, 79, 134),#4d167d);
+    transform: scale(1.2);
+}
+
+.sticky-button{
+    border-radius: 10px;
+    height: 50px;
+    width: 50px;
+    border: solid 1px  #8E2DE2;
+    position: sticky;
+    bottom: 30px;
+    background-color: #8424d9;
+    margin-left: 93.5%;
+    margin-bottom: 50px;
+}
+
+
+
+footer 
+{
+background-color: #000000;
+color: #fff;
+padding: 40px 0;
+text-align: center;
+font-family: Arial, sans-serif;
+
+}
+
+.footer-container-1 {
+display: flex;
+justify-content: space-around;
+flex-wrap: wrap;
+max-width: 1200px;
+margin: 0 auto;
+}
+
+.footer-section {
+flex: 1;
+margin: 20px;
+min-width: 250px;
+}
+
+.footer-section h2 {
+font-size: 20px;
+margin-bottom: 15px;
+border-bottom: 2px solid #fff;
+display: inline-block;
+padding-bottom: 5px;
+}
+
+.footer-section p,
+.footer-section ul {
+font-size: 14px;
+line-height: 1.8;
+}
+
+.footer-section ul {
+list-style: none;
+padding: 0;
+}
+
+.footer-section ul li {
+margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+color: #fff;
+text-decoration: none;
+transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+color: #8E2DE2;
+}
+
+.footer-section .social-icons {
+margin-top: 20px;
+}
+
+.footer-section .social-icons a {
+color: #fff;
+margin: 0 10px;
+font-size: 18px;
+transition: color 0.3s;
+}
+
+.footer-section .social-icons a:hover {
+color: #8E2DE2;
+}
+
+.footer-bottom {
+margin-top: 30px;
+font-size: 14px;
+padding-top: 10px;
+}
+
