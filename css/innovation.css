@@ -1,34 +1,96 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-
-.container {
-    width: 90%;
-    max-width: 900px;
-    margin: 0 auto;
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 1000px;
+    padding: 15px 10%;
+    margin: 20px;
+    height: 30px;
+    background-color: #26072d;
+    border: 1px solid #8e2de2;
+    border-radius: 15px;
+    margin-bottom: 100px;
+    box-shadow: 0px 0px 50px #000;
 }
-header {
-    background: #7b086289;
-    color: #fff;
-    padding: 0;
-    text-align: center;
-    border-radius: 5px;
+@keyframes bg{
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 0% 100%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
 }
-header h1 {
-    font-size: 2.5rem;
+.home-page-container{
+    margin-bottom: 100px;
 }
-nav ul {
-    list-style: none;
-    margin-top: 10px;
-}
-nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
- nav ul li a {
-    color: #fff;
+.container li, a, button {
+    font-weight: 500;
+    font-size: 14px;
+    color: rgba(250, 247, 247, 0.945);
     text-decoration: none;
-    font-size: 1.1rem;
 }
+
+.logo {
+    height: 70px;
+    cursor: pointer;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-login{
+    padding: 8px 40px;
+    border-radius: 30px;
+    color: #000000;
+    background-color: white;
+    border: none;
+    transition: 0.5s;
+}
+.nav-login:hover{
+    background-color: #8e2de2;
+}
+.menu-icon{
+    height: 30px;
+}
+
+.nav-links li {
+    display: inline-block;
+    padding: 0px 15px;
+}
+
+.nav-links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav-links li a:hover {
+    color: #8e2de2;
+}
+
+
+.line-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+}
+
+.line{
+    height: 5px;
+    width: 500px;
+    color: #3c1261;
+    box-shadow: 10px 0 200px 20px #8e2de2;
+    background-image: linear-gradient(45deg, #21139c, #9641ac, #6060e5);
+}
+
+
+
 .survey{
     background-color: bisque;
    padding: 20px;
@@ -43,10 +105,19 @@ nav ul li {
     flex-direction: row;
     justify-content: space-evenly;
 }
+.body-container-2{
+    height: 450px;
+    width: 1150px;
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
    
+}
 .box{
-    background-color: bisque;
-    width:350px;
+    background-color: rgb(193, 188, 135);
+    width:400px;
     padding: 15px;
     margin: 10px;
     border: 1px solid black;
@@ -55,12 +126,29 @@ nav ul li {
  
 }
 .box:hover{
-    background-color: rgb(218, 245, 206);
+    background-color: rgb(183, 112, 164);
     transition: 4s cubic-bezier();
 
 }
 .font{
     font-family: 'poppins', sans-serif;
+}
+.btn{
+    margin-bottom: 20px;
+    color:red;
+    background-color: rgb(152, 75, 75);
+    border: 1px black solid;
+    border-radius: 20px;
+   align-items: center;
+   padding-left: 35px;
+    width: 150px;
+    height: 50px;
+    display: flex;
+    float: left;
+}
+.btn:hover{
+    transition:2sec;
+    background-color: #775793;
 }
 .development{
     width: 90%;
@@ -68,15 +156,16 @@ nav ul li {
     margin: 0 auto;  
 }
 .body-container-2{
-    height: 450px;
+    height: 500px;
     width: 1050px;
     padding: 10px;
     margin: 10px;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    
-    
+    display: flex;
+   
+
   }
   .footer-container{
     padding: 50px;
@@ -211,7 +300,12 @@ padding-top: 10px;
         height: auto;
         width: auto;
        }
-      
+       .body-container-2{
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        width: auto;
+       }   
   }
   /*Tablet*/
   @media(min-width: 601px) and (max-with:800px){
@@ -221,7 +315,12 @@ padding-top: 10px;
     border: 2px black solid;
     border-bottom: 5px dashed black;
     }
-
+    .body-container-2{
+        width:auto;
+        height: auto;
+        border: 2px black solid;
+        border-bottom: 5px dashed black;
+        }
   
   
   }
@@ -234,4 +333,11 @@ padding-top: 10px;
     border-top: 5px dashed black;
     height: 400px;
  }
+ .body-container-2{
+    height: auto;
+    width: auto;
+     border: 2px black solid;
+     border-top: 5px dashed black;
+     height: 400px;
+  }
 }
