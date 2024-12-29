@@ -310,8 +310,21 @@ body{
     
     }
     
-    @media only screen and (min-width: 601px) and (max-width: 768px) {
-    .menu-icon{
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+    body{
+        margin: 25px;
+        overflow-x: hidden;
+    }
+    .home-page-container{
+        padding-left: 5px;
+        padding-right: px;
+        margin: -40px;
+        margin-top: -10px;
+        margin-right: -35px;
+            
+    }
+    
+        .menu-icon{
         display: none;
     }
     .container li, a, button{
@@ -406,16 +419,35 @@ body{
     .footer-input-email{
         padding: 12px 10px;
     }
-    }
+}
     
-    @media only screen and (max-width: 600px){
+@media only screen and (max-width: 600px){
     body{
-        margin: 10px
+        margin: 25px;
+        overflow-x: hidden;
     }
+    .home-page-container{
+        padding-left: 5px;
+        padding-right: px;
+        margin: -40px;
+        margin-top: -10px;
+        margin-right: -35px;
+        
+    }
+
+    .login-container{
+        margin: 0px 20px;
+    }
+
+    .input-box i{
+        left: 300px;
+        font-size: 18px;
+    }
+
     .logo-1{
         display: none;
     }
-    .container li, a, button {
+    .container li, a  button {
         display: none;
     }
     .container img{
