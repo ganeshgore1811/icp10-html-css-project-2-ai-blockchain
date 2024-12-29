@@ -348,7 +348,7 @@ body{
     border-radius: 40px;
     margin: 15px 10px;
     font-size: 10px;
-    border: 1px solid #8E2DE2;
+    border: none;
     transition: 0.5s;
 } 
 .section-card-button i{
@@ -461,7 +461,7 @@ body{
 }
 
 .section-edge-container{
-    margin: 100px;
+    margin: 40px;
 }
 .section-edge-area{
     padding: 40px 0 0 0;
@@ -714,8 +714,6 @@ font-size: 14px;
 padding-top: 10px;
 }
 
-
-
 @media only screen and (min-width: 769px) {
 
 .menu-icon{
@@ -724,23 +722,24 @@ padding-top: 10px;
 .section-main-info {
     padding: 15px;
 }
-
+.container li, a{
+    font-size: 14px;
 }
-
+}
 @media only screen and (min-width: 601px) and (max-width: 768px) {
     .menu-icon{
         display: none;
-    }
-    .container li{
-        font-size: 10px;
     }
     
     .nav-login{
         display: none;
     }
     
+    .logo{
+        height: 60px;
+    }
     .container li, a{
-        font-size: 10px;
+        font-size: 8px;
     }
     
     .home-page-heading {
@@ -763,6 +762,7 @@ padding-top: 10px;
 }
     
 @media only screen and (max-width: 600px){
+
 .menu-icon{
     height: 10px;
 }
@@ -774,8 +774,12 @@ padding-top: 10px;
 .container li {
     display: none;
 }
-.container img{
-    height: 40px;
+.logo{
+    height: 60px;
+}
+
+.menu-icon{
+    height: 30px
 }
 .responsive-button{
     display: block;
@@ -788,14 +792,16 @@ padding-top: 10px;
 }
 
 .page-heading{
-    font-size: 17px;
+    font-size: 18px;
 }
 .page-description{
+    padding: 10px;
     font-size: 7px;
     text-wrap: wrap;
 }
-.home-page-heading {
-    font-size: 17px;
+
+.page-description-heading{
+    font-size: 12px;
 }
 
 .section-main-info div{

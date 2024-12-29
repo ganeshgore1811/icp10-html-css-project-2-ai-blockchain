@@ -1,33 +1,45 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 body{
     box-sizing: border-box;
-    margin-bottom: 50px;
+    margin: 0;
     padding: 0;
+    background-color: #160823;
     font-family: 'poppins', sans-serif;
-    background-size: 100% 100%;
-    padding: 10px 0px 0px 0px;
+    background-size: 300% 300%;
     background-image: linear-gradient(45deg, #161144, #210D26, #24243E);
     animation: bg 12s ease infinite;
+} 
+
+@keyframes bg{
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 0% 100%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
 }
 
- .head{
+.container{
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 1000px;
-    padding: 35px 20%;
+    padding: 30px 10%;
     margin: 20px;
     height: 30px;
     background-color: #26072d;
-   border: 1px solid #8e2de2;
+    border: 1px solid #8e2de2;
     border-radius: 15px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     box-shadow: 0px 0px 50px #000;
 }
 .home-page-container{
     margin-bottom: 100px;
 }
-.head li, a, button {
+.container li, a, button {
     font-weight: 500;
     font-size: 14px;
     color: rgba(250, 247, 247, 0.945);
@@ -76,7 +88,7 @@ body{
     padding: 0;
     box-sizing: border-box;
 }
-.container{
+.card{
    width: 90%;
    max-width: 1200;
    margin: 0 auto;
@@ -95,10 +107,10 @@ body{
      max-height: 250px;
      max-width: 500px;
      margin: 10px;
-     border: 0.4px solid #4B0082;
+     border: 0.4px solid #d9d9e4;
      border-radius: 40px;
      padding: 10px;
-    
+   
  }
  
  
@@ -107,10 +119,6 @@ body{
      border-radius: 10px;
      border-radius: 30px; 
  }
- 
- 
- 
-
  h2 {
     font-size: 2rem;
     margin-bottom: 20px;
@@ -124,16 +132,15 @@ p {
     margin-bottom: 20px;
 }
  .service {
-    background: #777474;
+    background: #461f49;
     margin: 10px 0;
     padding: 10px;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     flex-direction: column;
     margin-bottom: 30px;
-    
-    
- }
+    border: 0.4px solid #d9d9e4;
+    }
  .nav-login{
     padding: 8px 40px;
     border-radius: 30px;
@@ -159,7 +166,7 @@ p {
 }
 
 .nav-links li a:hover {
-    color: #8e2de2;
+    color: #0c70d3;
 }
 .footer-container{
     padding: 50px;
@@ -213,7 +220,7 @@ footer
 {
 background-color:#080209;
 color: #fff;
-padding: 5px 20px;
+padding: 5px 0;
 text-align: center;
 font-family: Arial, sans-serif;
 }
@@ -223,7 +230,7 @@ display: flex;
 justify-content: space-around;
 flex-wrap: wrap;
 max-width: 1200px;
-margin: 100px auto;
+margin: 0 auto;
 }
 
 .footer-section {
@@ -285,3 +292,4 @@ margin-top: 30px;
 font-size: 14px;
 padding-top: 10px;
 }
+
