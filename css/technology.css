@@ -33,7 +33,7 @@ body{
     background-color: #26072d;
     border: 1px solid  #8e2de2;
     border-radius: 15px;
-    margin: 50px 70px;
+    margin: 20px;
     box-shadow: 0 0 50px #000000 ;
 }
 
@@ -750,10 +750,10 @@ padding-top: 10px;
         color: #fff;
     }
     .feature-description-para-even{
-        margin-left: 50px;
+        margin-left: 25px;
         font-size: 15px;
         text-align:justify;
-        margin-right: 50px;
+        margin-right: 25px;
         color: #fff;
     }
 }
