@@ -150,7 +150,7 @@ p {
     transition: 0.5s;
 }
 .nav-login:hover{
-    background-color: #8e2de2;
+    background-color:  #461f49;
 }
 .menu-icon{
     height: 30px;
@@ -166,24 +166,10 @@ p {
 }
 
 .nav-links li a:hover {
-    color: #0c70d3;
-}
-.footer-container{
-    padding: 50px;
-    margin: 0 60px;
+    color:  #461f49;
 }
 
-.footer-content{
-    border-radius: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 500px;
-    width: 100%;
-    border: 2px solid  #8E2DE2;
-}
 
-.footer-email-subsciption{
     display: flex;
     justify-content: center;
     align-items: center;
