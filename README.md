@@ -26,7 +26,7 @@ The aim of this project is to provide an introductory platform that highlights t
 
 # Team Members
 
-- Team Learder : Aniket Singh
+- Team Leader : Aniket Singh
 - Team Member : Prayag Waje 
 - Team Member : Aditi Kalane
 - Team Member : Rutuja Ranpise
