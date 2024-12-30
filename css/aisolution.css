@@ -200,6 +200,12 @@ section{
 .cnt-btn:hover{
     background-color: #8e2de2;
 }
+.video-section{
+    width: 600px;
+    height: 360px;
+    margin-left: 400px;
+    color: white;
+}
 .footer-container{
     padding: 50px;
     margin: 0 60px;
@@ -423,6 +429,11 @@ font-size: 18px;
 .footer-container {
     padding: 10px;
     margin: 10px;
+}
+.video-section{
+    margin-left: 50px;
+    width: 400px;
+    height: 250px;
 }
 
 }
