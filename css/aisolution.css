@@ -115,6 +115,11 @@ header{
     font-weight: 500; 
     margin: 5px;
 }
+.solution-text{
+    width: 800px;
+    text-align: center;
+    margin-left: 240px;
+}
 .line{
     height: 5px;
     width: 500px;
@@ -155,6 +160,7 @@ section{
 
 .features, .industries{
     display: flex;
+    flex-wrap: wrap;
     gap: 2rem;
     justify-content: center ;
 }
@@ -398,6 +404,10 @@ font-size: 18px;
 }
 .head-text{
     margin-bottom: 35px;
+}
+.solution-text{
+    margin-left: 5px;
+    width: 430px;
 }
 .features, .industries{
     gap: 1rem;
