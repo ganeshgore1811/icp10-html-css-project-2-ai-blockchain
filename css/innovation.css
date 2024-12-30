@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 body{
+   
     background-color: #160823;
     font-family: 'poppins', sans-serif;
     background-size: 300% 300%;
@@ -25,6 +26,7 @@ body{
 .home-page-container{
     margin-bottom: 100px;
 }
+
 .container li, a, button {
     font-weight: 500;
     font-size: 14px;
@@ -92,6 +94,7 @@ body{
    border-radius: 50px;
 }
 .body-container{
+    align-items: center;
     height: 450px;
     width: 1150px;
     padding: 10px;
@@ -101,6 +104,7 @@ body{
     justify-content: space-evenly;
 }
 .body-container-2{
+    align-items: center;
     height: 450px;
     width: 1150px;
     padding: 10px;
@@ -111,36 +115,42 @@ body{
    
 }
 .box{
-    background-color: rgb(193, 188, 135);
-    width:400px;
+    font-family: 'poppins', sans-serif;
+    background-color: white;
+    color:black;
+    width:320px;
     padding: 15px;
-    margin: 10px;
+    margin-left: 40px;
+    margin-right: 50px;
+   margin: 10px;
     border: 1px solid black;
     box-shadow: 5px 5px 5px 5px rgb(60, 53, 53);
     border-radius: 30px;
  
 }
 .box:hover{
-    background-color: rgb(183, 112, 164);
+    background-color: rgb(163, 114, 150);
     transition: 4s cubic-bezier();
 
 }
 .font{
     font-family: 'poppins', sans-serif;
-    color: white;
+    color:white;
+    margin-left: 40px;
+    margin-right: 50px;
 }
 .btn{
-    margin-bottom: 20px;
-  color: white;
-  background-color: black;
-    border: 1px black solid;
-    border-radius: 20px;
+   color: black;
+   background-color: white;
+   margin-bottom: 20px;
+   border: 1px black solid;
+   border-radius: 20px;
    align-items: center;
    padding-left: 35px;
-    width: 150px;
-    height: 50px;
-    display: flex;
-    float: left; 
+   width: 150px;
+   height: 50px;
+   display: flex;
+   float: left;
 }
 .btn:hover{
    
@@ -153,6 +163,7 @@ body{
     margin: 0 auto;  
 }
 .body-container-2{
+   align-items: center;
     height: 500px;
     width: 1050px;
     padding: 10px;
@@ -167,6 +178,7 @@ body{
   .footer-container{
     padding: 50px;
     margin: 0 60px;
+    
 }
 
 .footer-content{
@@ -306,6 +318,19 @@ padding-top: 10px;
        .container li {
         display: none;
     } 
+    .nav-login{
+        display: none;
+    }
+    .box{
+        margin: auto;
+    }
+    .footer-container{
+        margin:0px;
+    }
+    .nav-links{
+        display: flex;
+        position: fixed;
+    }
   }
   /*Tablet*/
   @media(min-width: 601px) and (max-with:800px){
@@ -324,6 +349,16 @@ padding-top: 10px;
   
         .container li, a{
             font-size: 8px;
+        }
+        .box{
+            margin: auto;
+        }
+        .footer-container{
+            margin:0px;
+        }
+        .nav-links{
+            display: flex;
+            position: fixed;
         }
   }
   /*Laptop*/
@@ -349,4 +384,14 @@ padding-top: 10px;
      border-top: 5px dashed black;
      height: 400px;
   }
+  .box{
+    margin: auto;
+}
+.footer-container{
+    margin:0px;
+}
+.nav-links{
+    display: flex;
+    position: fixed;
+}
 }
