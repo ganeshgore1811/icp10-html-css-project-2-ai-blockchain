@@ -368,11 +368,23 @@ font-size: 18px;
 .text{
     font-size: 16px;
 }
+.solution-text{
+    margin-left: 10px;
+    width: 600px;
+}
+.video-section{
+    width: 500px;
+    height: 300px;
+    margin-left: 100px;
+}
 .list{
     padding-left: 30px;
 }
 .btn{
     padding: 13px 30px;
+}
+.form{
+    margin-left: 220px;
 }
 }
         
