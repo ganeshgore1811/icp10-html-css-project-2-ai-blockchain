@@ -200,6 +200,12 @@ section{
 .cnt-btn:hover{
     background-color: #8e2de2;
 }
+.video-section{
+    width: 600px;
+    height: 360px;
+    margin-left: 400px;
+    color: white;
+}
 .footer-container{
     padding: 50px;
     margin: 0 60px;
@@ -362,11 +368,23 @@ font-size: 18px;
 .text{
     font-size: 16px;
 }
+.solution-text{
+    margin-left: 10px;
+    width: 600px;
+}
+.video-section{
+    width: 500px;
+    height: 300px;
+    margin-left: 100px;
+}
 .list{
     padding-left: 30px;
 }
 .btn{
     padding: 13px 30px;
+}
+.form{
+    margin-left: 220px;
 }
 }
         
@@ -423,6 +441,11 @@ font-size: 18px;
 .footer-container {
     padding: 10px;
     margin: 10px;
+}
+.video-section{
+    margin-left: 50px;
+    width: 400px;
+    height: 240px;
 }
 
 }
