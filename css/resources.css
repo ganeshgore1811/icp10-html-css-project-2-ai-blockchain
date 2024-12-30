@@ -121,224 +121,84 @@ main {
 .about {
     margin-top: 20px;
     padding: 20px;
-    background: #e7f9e7;
+   
     border-left: 4px solid #4caf50;
 }
 
-footer {
-    background: #333;
-    color: white;
-    text-align: center;
-    padding: 10px
+footer 
+{
+background-color:#080209;
+color: #fff;
+padding: 5px 0;
+text-align: center;
+font-family: Arial, sans-serif;
 }
 
-    @media only screen and (min-width: 769px) {
+.footer-container-1 {
+display: flex;
+justify-content: space-around;
+flex-wrap: wrap;
+max-width: 1200px;
+margin: 0 auto;
+}
 
-        .menu-icon{
-            display: none;
-        }
-        .section-main-info {
-            padding: 15px;
-        }
-        
-        }
-        
-        @media only screen and (min-width: 601px) and (max-width: 768px) {
-        .menu-icon{
-            display: none;
-        }
-        .container li, a, button{
-            font-size: 10px;
-        }
-        .nav-login{
-            display: none;
-        }
-        
-        .container li, a nav{
-            font-size: 12px;
-        }
-        
-        .home-page-heading {
-            font-size: 1.8rem;
-        }
-        
-        .page-description {
-            font-size: 13px;
-        }
-        
-        
-        .section-main-info div{
-            color: white;
-            margin: 50px;
-        }
-        
-        .section-page-card{
-            margin: 10px;
-        }
-        
-        .section-card img{
-            height: 100%;
-            width: 100%; 
-        }
-        
-        .section-advantages-container{
-            margin: 10px;
-        }
-        
-        .section-advantages-card-area{
-            margin: 10px;
-        }
-        
-        .section-crypto-div div{
-            min-height: 100px;
-            max-width: 100px;
-        }
-        
-        .section-crypto-div div img{
-            display: block;
-            margin: auto;
-            max-height: 23px;
-            min-width: none;
-        }
-        
-        .section-crypto-div div p{
-            text-align: center;
-            font-size: 6px;
-            color: white;
-            padding-bottom: 10px;
-        }
-        
-        .section-crypto-div div span p{
-            font-size: 12px;    
-        }
-        
-        .section-crypto-container{
-            margin: auto;
-            padding: auto;
-            flex-wrap: wrap;
-        }
-        
-        .section-pricing-container{
-            margin: 25px;
-        }
-        .page-description {
-            font-size: 10px;
-        }
-        
-        .pricing-cards div {
-            width: 90%;
-            margin: 10px 50px;
-        }
-        
-        .footer-container {
-            padding: 10px;
-            margin: 50px;
-        }
-        .responsive-text-input{
-            padding: 8px 20px;
-        }
-        
-        }
-        
-        @media only screen and (max-width: 600px){
-        .menu-icon{
-            height: 10px;
-        }
-        
-        .container li, a {
-            display: none;
-        }
-        .container img{
-            height: 40px;
-        }
-        .responsive-button{
-            font-size: 10px;
-            padding: 8px 10px;
-        }
-        
-        .responsive-text-input{
-            padding: 8px 12px;
-        }
-        
-        .page-heading{
-            font-size: 17px;
-        }
-        .page-description{
-            font-size: 7px;
-            text-wrap: wrap;
-        }
-        .home-page-heading {
-            font-size: 17px;
-        }
-        
-        .section-main-info div{
-            color: white;
-            margin: 10px;
-        }
-        .section-page-card{
-            margin: 10px;
-        }
-        
-        .section-card img{
-            height: 100%;
-            width: 100%; 
-        }
-        
-        .section-advantages-container{
-            margin: 10px;
-        }
-        
-        .section-advantages-card-area{
-            margin: 10px;
-        }
-        
-        .section-crypto-div div{
-            min-height: 100px;
-            max-width: 100px;
-        }
-        
-        .section-crypto-div div img{
-            display: block;
-            margin: auto;
-            max-height: 23px;
-            min-width: none;
-        }
-        
-        .section-crypto-div div p{
-            text-align: center;
-            font-size: 6px;
-            color: white;
-            padding-bottom: 10px;
-        }
-        
-        .section-crypto-div div span p{
-            font-size: 12px;    
-        
-        }
-        
-        .section-crypto-container{
-            margin: auto;
-            padding: auto;
-            flex-wrap: wrap;
-        }
-        
-        .section-pricing-container{
-            margin: 25px;
-        }
-        .page-description {
-            font-size: 10px;
-        }
-        
-        .pricing-cards div {
-            width: 90%;
-            margin: 10px auto;
-        }
-        
-        .footer-container {
-            padding: 10px;
-            margin: 10px;
-        }
-        
-        
-        }
-        
+.footer-section {
+flex: 1;
+margin: 20px;
+min-width: 250px;
+}
+
+.footer-section h2 {
+font-size: 20px;
+margin-bottom: 15px;
+border-bottom: 2px solid #fff;
+display: inline-block;
+padding-bottom: 5px;
+}
+
+.footer-section p,
+.footer-section ul {
+font-size: 14px;
+line-height: 1.8;
+}
+
+.footer-section ul {
+list-style: none;
+padding: 0;
+}
+
+.footer-section ul li {
+margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+color: #fff;
+text-decoration: none;
+transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+color: #8E2DE2;
+}
+
+.footer-section .social-icons {
+margin-top: 20px;
+}
+
+.footer-section .social-icons a {
+color: #fff;
+margin: 0 10px;
+font-size: 18px;
+transition: color 0.3s;
+}
+
+.footer-section .social-icons a:hover {
+color: #8E2DE2;
+}
+
+.footer-bottom {
+margin-top: 30px;
+font-size: 14px;
+padding-top: 10px;
+}
+
