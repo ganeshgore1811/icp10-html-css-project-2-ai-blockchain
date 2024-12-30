@@ -75,9 +75,6 @@ body{
     font-size: 14px;
 }
 
-
-
-
 .button {
     flex-wrap: wrap;
     padding: 7px 18px;
@@ -100,7 +97,6 @@ li, a, button {
     color: rgba(250, 247, 247, 0.945);
     text-decoration: none;
 }
-
 .line-container {
     display: flex;
     justify-content: center;
@@ -116,7 +112,6 @@ li, a, button {
     box-shadow: 10px 0 200px 20px #8e2de2;
     background-image: linear-gradient(45deg, #21139c, #9641ac, #6060e5);
 }
-
 .main-page-heading{
     color: white;
     margin-top: 90px;
