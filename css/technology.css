@@ -852,7 +852,177 @@ padding-top: 10px;
         margin-bottom: 50px;
     }   
 }
-@media screen and (min-width: 769px) and (max-width: 1440px){
+@media screen and (min-width: 767px) and (max-width: 1025px){
+    .sub-heading{
+        font-size:27px;
+        color: #ffffff;
+        padding: 0 0 20px 80px;
+        margin: 20px 0 9px 0;
+    } 
+    .sub-description{
+        color: #fff;
+        padding: 0 120px;
+        margin-top: 0;
+    }
+
+    .feature-card{ 
+   
+        width: 880px;
+        margin: 20px auto;
+        display: flex;
+        flex-direction: row;
+        background: linear-gradient(to right, rgb(64, 41, 94),#06303e);
+        border-radius: 15px;
+        transition: transform 0.3s ease-in-out;
+        
+    }
+    .feature-card:hover{
+        transform: scale(1.05);
+    }
+    
+    
+    .feature-image-left{
+        height: 320px;
+        width: 320px;
+        border-radius: 15px;
+        justify-content: center;
+        margin: 40px 0;
+        margin-left: 40px;
+        
+    }
+    .feature-image-right{
+        height: 300px;
+        width: 300px;
+        border-radius: 15px;
+        justify-content: center;
+        margin: 40px 0;
+        margin-right: 40px;
+    }
+    
+    
+    .feature-description-odd{
+        margin-left: 40px;
+        margin-top: 40px;
+        margin-bottom: 0;
+        font-size: 30px;
+        color: #fff;
+    }
+    .feature-description-even{
+        margin-left: 40px;
+        margin-top: 40px;
+        margin-bottom: 0;
+        font-size: 30px;
+        color: #fff;
+    }
+    
+    .feature-description-para-odd{
+        font-size: 15px;
+        margin-left: 40px;
+        text-align:justify;
+        margin-right: 40px;
+        color: #fff;
+    }
+    .feature-description-para-even{
+        margin-left: 40px;
+        font-size: 15px;
+        text-align:justify;
+        margin-right: 40px;
+        color: #fff;
+    }
+    
+    .btn{
+        border: none;
+        padding:10px 25px;
+        margin-left: 40px;
+        margin-top: 5px;
+        border-radius: 20px;
+        background-color: #0088a9;
+    } 
+
+    .working-container{
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 140px;
+        padding: 0 90px;
+    }
+    
+    .working-card-left{
+        height: 200px;
+        width: 550px;
+        border-radius: 15px;
+        border: solid 1px  #8E2DE2;
+        margin: 20px 20px; 
+        transition: 0.5s;     
+    }
+    
+    /*background: linear-gradient(to right, rgb(98, 52, 158),#680c77);*/
+    
+    .working-card-left:hover{
+        box-shadow: 0 0 15px #8E2DE2;
+    }
+    
+    .working-card-right{
+        height: 200px;
+        width: 550px;
+        border-radius: 15px;
+        margin: 20px 20px;
+        border: solid 1px  #8E2DE2; 
+        transition: 0.5s; 
+    }
+    
+    .working-card-right:hover{
+        box-shadow: 0 0 15px #8E2DE2;
+    }
+    
+    
+    .step-heading{
+        text-align: center;
+        font-size: 24px;
+        padding-top: 15px;
+        color: #fff;
+    }
+    
+    .step-paragrapgh{
+        text-align: center;
+        font-size: 18px;
+        padding-left: 30px;
+        padding-right: 30px;
+        color: #fff;
+    }
+    
+    .butn{
+        background: linear-gradient(to right, rgb(41, 3, 90),#1b5568);
+        border-radius: 10px;
+        padding: 10px 30px;
+        font-size: 20px;
+        display: block;
+        margin: 20px auto;
+        margin-bottom: 40px;
+        border: none;
+        transition: transform 0.3s ease-in-out;
+    }
+    .butn:hover{
+        background: linear-gradient(to right, rgb(37, 79, 134),#4d167d);
+        transform: scale(1.2);
+    }
+    .sticky-button{
+        border-radius: 10px;
+        height: 50px;
+        width: 50px;
+        border: solid 1px  #8E2DE2;
+        position: sticky;
+        bottom: 30px;
+        background-color: #8424d9;
+        margin-left: 93.5%;
+        margin-bottom: 50px;
+    } 
+    
+}
+
+
+
+
+@media screen and (min-width: 1026px) and (max-width: 1440px){
     .container{
         display: flex;
         justify-content: space-between;
