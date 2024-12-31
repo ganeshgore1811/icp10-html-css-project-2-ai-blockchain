@@ -7,6 +7,12 @@ body{
     background-image: linear-gradient(45deg, #161144, #210D26, #24243E);
     animation: bg 12s ease infinite;
 } 
+.description{
+    margin-left: 50px;
+}
+.menu-icon{
+    display: none;
+}
 
 .container{
     display: flex;
@@ -116,12 +122,12 @@ body{
 }
 .box{
     font-family: 'poppins', sans-serif;
-    background-color: white;
-    color:black;
+    background-color: #4b0066;
+    color: white;
     width:320px;
     padding: 15px;
-    margin-left: 40px;
-    margin-right: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
    margin: 10px;
     border: 1px solid black;
     box-shadow: 5px 5px 5px 5px rgb(60, 53, 53);
@@ -129,11 +135,17 @@ body{
  
 }
 .box:hover{
-    background-color: rgb(163, 114, 150);
-    transition: 4s cubic-bezier();
+    transform: scale(1.03);
+    box-shadow: 0 6px 12px #8231d3;
 
 }
 .font{
+    font-family: 'poppins', sans-serif;
+    color:white;
+    margin-left: 100px;
+   
+}
+.heading{
     font-family: 'poppins', sans-serif;
     color:white;
     margin-left: 40px;
@@ -157,6 +169,7 @@ body{
   
     
 }
+
 .development{
     width: 90%;
     max-width: 900px;
@@ -172,7 +185,7 @@ body{
     flex-direction: row;
     justify-content: space-evenly;
     display: flex;
-   
+ 
 
   }
   .footer-container{
@@ -362,7 +375,7 @@ padding-top: 10px;
         }
   }
   /*Laptop*/
-  @media(min-width: 801px) and (max-with:1024px){
+  @media(min-width: 801px) and (max-with:1440px){
     .body-container{
    height: auto;
    width: auto;
@@ -371,7 +384,7 @@ padding-top: 10px;
     height: 400px;
  }
  .menu-icon{
-    height: 10px;
+    display: none;
 }
 
 .nav-login{
