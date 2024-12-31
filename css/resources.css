@@ -92,10 +92,11 @@ main {
 
 .resources {
     margin-bottom: 20px;
+    margin-left: 80px;
 }
 
 .resources h2 {
-    color: green;
+    color: white;
     margin-bottom: 10px;
 }
 
@@ -201,4 +202,15 @@ margin-top: 30px;
 font-size: 14px;
 padding-top: 10px;
 }
+.sub-heading{
+    font-size: 33px;
+    color: #fff;
+    padding: 0 150px;
+    margin-bottom: 50px;
+}
 
+.sub-description{
+    color: #fff;
+    padding: 0 180px;
+    
+}
