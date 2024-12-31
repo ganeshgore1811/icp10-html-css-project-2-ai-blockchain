@@ -169,10 +169,19 @@ p {
     color:  #461f49;
 }
 
+.footer-container{
+    padding: 50px;
+    margin: 0 60px;
+}
 
+.footer-content{
+    border-radius: 20px;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    height: 500px;
+    width: 100%;
+    border: 2px solid  #8E2DE2;
 }
 
 .footer-input-email{
