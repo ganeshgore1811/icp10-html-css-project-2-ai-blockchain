@@ -35,6 +35,7 @@ body{
     border-radius: 15px;
     margin: 20px;
     box-shadow: 0 0 50px #000000 ;
+       
 }
 
 .logo{
@@ -73,6 +74,9 @@ body{
     padding: 8px 40px;
     font-size: 14px;
 }
+.menu-icon{
+    display:none ;
+}
 
 .button {
     flex-wrap: wrap;
@@ -84,6 +88,7 @@ body{
     transition: all 0.3s ease 0s;
     
 }
+
 
 .button:hover {
     background-color: rgba(0,136,169,0.8);
@@ -392,7 +397,15 @@ padding-top: 10px;
         height: 60px;
         width: 60px;
     }
+
+    .menu-icon{
+        height: 30px ;
+        width: 30px;
+    }
     .nav-links{
+        display: none;
+    }
+    .login-btn{
         display: none;
     }
     .feature-card{
@@ -840,6 +853,20 @@ padding-top: 10px;
     }   
 }
 @media screen and (min-width: 769px) and (max-width: 1440px){
+    .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 8%;
+        height: 20px;
+        background-color: #26072d;
+        border: 1px solid   #8e2de2;
+        border-radius: 15px;
+        margin: 20px 20px;
+        
+        box-shadow: 0 0 50px #000000 ;
+        
+    }
     .sub-heading{
         font-size: 33px;
         color: #fff;
