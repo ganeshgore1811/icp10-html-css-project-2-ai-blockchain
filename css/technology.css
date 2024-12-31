@@ -852,7 +852,87 @@ padding-top: 10px;
         margin-bottom: 50px;
     }   
 }
-@media screen and (min-width: 769px) and (max-width: 1440px){
+@media screen and (min-width: 767px) and (max-width: 1025px){
+    .feature-card{ 
+   
+        width: 880px;
+        margin: 20px auto;
+        display: flex;
+        flex-direction: row;
+        background: linear-gradient(to right, rgb(64, 41, 94),#06303e);
+        border-radius: 15px;
+        transition: transform 0.3s ease-in-out;
+        
+    }
+    .feature-card:hover{
+        transform: scale(1.05);
+    }
+    
+    
+    .feature-image-left{
+        height: 320px;
+        width: 320px;
+        border-radius: 15px;
+        justify-content: center;
+        margin: 40px 0;
+        margin-left: 40px;
+        
+    }
+    .feature-image-right{
+        height: 300px;
+        width: 300px;
+        border-radius: 15px;
+        justify-content: center;
+        margin: 40px 0;
+        margin-right: 40px;
+    }
+    
+    
+    .feature-description-odd{
+        margin-left: 40px;
+        margin-top: 40px;
+        margin-bottom: 0;
+        font-size: 30px;
+        color: #fff;
+    }
+    .feature-description-even{
+        margin-left: 40px;
+        margin-top: 40px;
+        margin-bottom: 0;
+        font-size: 30px;
+        color: #fff;
+    }
+    
+    .feature-description-para-odd{
+        font-size: 15px;
+        margin-left: 40px;
+        text-align:justify;
+        margin-right: 40px;
+        color: #fff;
+    }
+    .feature-description-para-even{
+        margin-left: 40px;
+        font-size: 15px;
+        text-align:justify;
+        margin-right: 40px;
+        color: #fff;
+    }
+    
+    .btn{
+        border: none;
+        padding:10px 25px;
+        margin-left: 40px;
+        margin-top: 5px;
+        border-radius: 20px;
+        background-color: #0088a9;
+    } 
+    
+}
+
+
+
+
+@media screen and (min-width: 1025px) and (max-width: 1440px){
     .container{
         display: flex;
         justify-content: space-between;
