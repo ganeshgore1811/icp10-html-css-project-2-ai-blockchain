@@ -27,7 +27,7 @@ body{
     align-items: center;
     height: 1000px;
     padding: 15px 10%;
-    margin: 20px;
+    margin: 12px;
     height: 30px;
     background-color: #26072d;
     border: 1px solid #8e2de2;
@@ -39,7 +39,7 @@ body{
 }
 .container li, a, button {
     font-weight: 500;
-    font-size: 14px;
+    font-size: 13px;
     color: rgba(250, 247, 247, 0.945);
     text-decoration: none;
 }
@@ -321,19 +321,23 @@ padding-top: 10px;
     }
     
 @media only screen and (min-width: 601px) and (max-width: 768px) {
-.container li{
-font-size: 10px;
-}
 .menu-icon{
     display: none;
 }
-        
+.logo{
+    height: 30px;
+}     
 .nav-login{
 display: none;
 }
-        
+.container{
+    margin:3px;
+    display:flex;
+    margin-inline-start: 5px;
+}    
 .container li, a{
-font-size: 10px;
+font-size: 7px;
+font-weight: 200px;
 }
         
 .home-page-heading {
@@ -350,6 +354,7 @@ font-size: 18px;
 }
 .btn{
     padding: 13px 30px;
+    font-size: 10px;
 }
 }
         
