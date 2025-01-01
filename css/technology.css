@@ -400,9 +400,10 @@ padding-top: 10px;
     }
 
     .menu-icon{
-        height: 30px ;
-        width: 30px;
+        display: block;
+        height: 30px;
     }
+
     .nav-links{
         display: none;
     }
